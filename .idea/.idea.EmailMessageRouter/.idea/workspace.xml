@@ -1,182 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="513a42b6-4947-4226-a385-daa39a8c8081" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.EmailMessageRouter/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.EmailMessageRouter/.idea/contentModel.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.EmailMessageRouter/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.EmailMessageRouter/.idea/indexLayout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.EmailMessageRouter/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.EmailMessageRouter/.idea/projectSettingsUpdater.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.EmailMessageRouter/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.EmailMessageRouter/riderModule.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Data/Cache/ICache.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Data/Cache/InMemoryCache.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Data/EmailMessageRouter.Data.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Data/EntityModel/Account.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Data/EntityModel/MessageRequest.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Data/Repositories/AccountRepositoryImpl.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Data/Repositories/IAccountRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Data/Repositories/IMessageRequestRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Data/Repositories/IRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Data/Repositories/MessageRequestRepositoryImpl.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Data/bin/Debug/netcoreapp3.1/EmailMessageRouter.Data.deps.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Data/bin/Debug/netcoreapp3.1/EmailMessageRouter.Data.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Data/bin/Debug/netcoreapp3.1/EmailMessageRouter.Data.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Data/obj/Debug/netcoreapp3.1/EmailMessageRouter.Data.AssemblyInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Data/obj/Debug/netcoreapp3.1/EmailMessageRouter.Data.AssemblyInfoInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Data/obj/Debug/netcoreapp3.1/EmailMessageRouter.Data.assets.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Data/obj/Debug/netcoreapp3.1/EmailMessageRouter.Data.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Data/obj/Debug/netcoreapp3.1/EmailMessageRouter.Data.csprojAssemblyReference.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Data/obj/Debug/netcoreapp3.1/EmailMessageRouter.Data.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Data/obj/Debug/netcoreapp3.1/EmailMessageRouter.Data.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Data/obj/EmailMessageRouter.Data.csproj.nuget.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Data/obj/EmailMessageRouter.Data.csproj.nuget.dgspec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Data/obj/EmailMessageRouter.Data.csproj.nuget.g.props" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Data/obj/EmailMessageRouter.Data.csproj.nuget.g.targets" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Data/obj/project.assets.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Data/obj/project.packagespec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain/EmailMessageRouter.Domain.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain/Handlers/AbstractHandler.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain/Handlers/IEmailHandler.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain/Handlers/IHandler.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain/Handlers/MessageReputationScoreHandler.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain/Handlers/SenderReputationScoreHandler.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain/Model/EmailMessage.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain/Model/MessageType.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain/Model/ValidationResult.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain/Model/ValidationResults.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain/Services/EmailDeliveryServiceImpl.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain/Services/IEmailDeliveryService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain/Services/IMessageRoutingService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain/Services/MessageRoutingService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain/Validation/EmailValidator.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain/Validation/IEmailValidationRule.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain/Validation/IValidationRule.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain/Validation/RecipientSubscribeRule.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain/Validation/SourceEmailValidationRule.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain/bin/Debug/netcoreapp3.1/EmailMessageRouter.Data.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain/bin/Debug/netcoreapp3.1/EmailMessageRouter.Data.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain/bin/Debug/netcoreapp3.1/EmailMessageRouter.Domain.deps.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain/bin/Debug/netcoreapp3.1/EmailMessageRouter.Domain.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain/bin/Debug/netcoreapp3.1/EmailMessageRouter.Domain.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain/obj/Debug/netcoreapp3.1/EmailMessageRouter.Domain.AssemblyInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain/obj/Debug/netcoreapp3.1/EmailMessageRouter.Domain.AssemblyInfoInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain/obj/Debug/netcoreapp3.1/EmailMessageRouter.Domain.assets.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain/obj/Debug/netcoreapp3.1/EmailMessageRouter.Domain.csproj.CopyComplete" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain/obj/Debug/netcoreapp3.1/EmailMessageRouter.Domain.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain/obj/Debug/netcoreapp3.1/EmailMessageRouter.Domain.csprojAssemblyReference.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain/obj/Debug/netcoreapp3.1/EmailMessageRouter.Domain.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain/obj/Debug/netcoreapp3.1/EmailMessageRouter.Domain.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain/obj/EmailMessageRouter.Domain.csproj.nuget.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain/obj/EmailMessageRouter.Domain.csproj.nuget.dgspec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain/obj/EmailMessageRouter.Domain.csproj.nuget.g.props" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain/obj/EmailMessageRouter.Domain.csproj.nuget.g.targets" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain/obj/project.assets.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain/obj/project.packagespec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Processor/Actors/MessageHandlerExecutorActor.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Processor/Actors/MessageResolverActor.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Processor/Actors/MessageRoutingManagerActor.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Processor/Actors/MessageSendingActor.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Processor/Actors/MessageValidationActor.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Processor/EmailMessageRouter.Processor.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Processor/Messages/AbstractMsg.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Processor/Messages/EmailDisqualifiedMsg.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Processor/Messages/EmailQualifyMsg.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Processor/Messages/EmailRequestMsg.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Processor/Messages/EmailResolvedMsg.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Processor/Messages/ExecuteHandlersMsg.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Processor/Messages/ResolveEmailTypeMsg.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Processor/Messages/SendBatchEmailsMsg.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Processor/Messages/SendEmailMsg.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Processor/Messages/ValidateEmailMsg.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Processor/Model/BulkEmailQueue.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Processor/Model/Email.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Processor/bin/Debug/netcoreapp3.1/EmailMessageRouter.Core.deps.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Processor/bin/Debug/netcoreapp3.1/EmailMessageRouter.Data.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Processor/bin/Debug/netcoreapp3.1/EmailMessageRouter.Data.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Processor/bin/Debug/netcoreapp3.1/EmailMessageRouter.Domain.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Processor/bin/Debug/netcoreapp3.1/EmailMessageRouter.Domain.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Processor/bin/Debug/netcoreapp3.1/EmailMessageRouter.Processor.deps.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Processor/bin/Debug/netcoreapp3.1/EmailMessageRouter.Processor.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Processor/bin/Debug/netcoreapp3.1/EmailMessageRouter.Processor.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Processor/obj/Debug/netcoreapp3.1/EmailMessageRouter.Core.AssemblyInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Processor/obj/Debug/netcoreapp3.1/EmailMessageRouter.Core.AssemblyInfoInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Processor/obj/Debug/netcoreapp3.1/EmailMessageRouter.Core.assets.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Processor/obj/Debug/netcoreapp3.1/EmailMessageRouter.Core.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Processor/obj/Debug/netcoreapp3.1/EmailMessageRouter.Core.csprojAssemblyReference.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Processor/obj/Debug/netcoreapp3.1/EmailMessageRouter.Core.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Processor/obj/Debug/netcoreapp3.1/EmailMessageRouter.Core.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Processor/obj/Debug/netcoreapp3.1/EmailMessageRouter.Processor.AssemblyInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Processor/obj/Debug/netcoreapp3.1/EmailMessageRouter.Processor.AssemblyInfoInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Processor/obj/Debug/netcoreapp3.1/EmailMessageRouter.Processor.assets.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Processor/obj/Debug/netcoreapp3.1/EmailMessageRouter.Processor.csproj.CopyComplete" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Processor/obj/Debug/netcoreapp3.1/EmailMessageRouter.Processor.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Processor/obj/Debug/netcoreapp3.1/EmailMessageRouter.Processor.csprojAssemblyReference.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Processor/obj/Debug/netcoreapp3.1/EmailMessageRouter.Processor.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Processor/obj/Debug/netcoreapp3.1/EmailMessageRouter.Processor.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Processor/obj/EmailMessageRouter.Core.csproj.nuget.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Processor/obj/EmailMessageRouter.Core.csproj.nuget.dgspec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Processor/obj/EmailMessageRouter.Core.csproj.nuget.g.props" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Processor/obj/EmailMessageRouter.Core.csproj.nuget.g.targets" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Processor/obj/EmailMessageRouter.Processor.csproj.nuget.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Processor/obj/EmailMessageRouter.Processor.csproj.nuget.dgspec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Processor/obj/EmailMessageRouter.Processor.csproj.nuget.g.props" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Processor/obj/EmailMessageRouter.Processor.csproj.nuget.g.targets" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Processor/obj/project.assets.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Processor/obj/project.packagespec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Web/Controllers/RoutingController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Web/EmailMessageRouter.Web.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Web/EntityModel/PostmarkEmail.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Web/EntityModel/PostmarkEmailResponse.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Web/Message Routing Service.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Web/Program.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Web/Properties/launchSettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Web/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Web/Startup.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Web/appsettings.Development.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Web/appsettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Web/bin/Debug/netcoreapp3.1/Akka.Persistence.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Web/bin/Debug/netcoreapp3.1/Akka.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Web/bin/Debug/netcoreapp3.1/AutoMapper.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Web/bin/Debug/netcoreapp3.1/EmailMessageRouter.Data.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Web/bin/Debug/netcoreapp3.1/EmailMessageRouter.Data.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Web/bin/Debug/netcoreapp3.1/EmailMessageRouter.Domain.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Web/bin/Debug/netcoreapp3.1/EmailMessageRouter.Domain.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Web/bin/Debug/netcoreapp3.1/EmailMessageRouter.Processor.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Web/bin/Debug/netcoreapp3.1/EmailMessageRouter.Processor.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Web/bin/Debug/netcoreapp3.1/EmailMessageRouter.Web.deps.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Web/bin/Debug/netcoreapp3.1/EmailMessageRouter.Web.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Web/bin/Debug/netcoreapp3.1/EmailMessageRouter.Web.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Web/bin/Debug/netcoreapp3.1/EmailMessageRouter.Web.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Web/bin/Debug/netcoreapp3.1/EmailMessageRouter.Web.runtimeconfig.dev.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Web/bin/Debug/netcoreapp3.1/EmailMessageRouter.Web.runtimeconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Web/bin/Debug/netcoreapp3.1/Google.Protobuf.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Web/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Web/bin/Debug/netcoreapp3.1/Properties/launchSettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Web/bin/Debug/netcoreapp3.1/appsettings.Development.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Web/bin/Debug/netcoreapp3.1/appsettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Web/obj/Debug/netcoreapp3.1/EmailMessageRouter.Web.AssemblyInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Web/obj/Debug/netcoreapp3.1/EmailMessageRouter.Web.AssemblyInfoInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Web/obj/Debug/netcoreapp3.1/EmailMessageRouter.Web.MvcApplicationPartsAssemblyInfo.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Web/obj/Debug/netcoreapp3.1/EmailMessageRouter.Web.RazorTargetAssemblyInfo.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Web/obj/Debug/netcoreapp3.1/EmailMessageRouter.Web.assets.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Web/obj/Debug/netcoreapp3.1/EmailMessageRouter.Web.csproj.CopyComplete" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Web/obj/Debug/netcoreapp3.1/EmailMessageRouter.Web.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Web/obj/Debug/netcoreapp3.1/EmailMessageRouter.Web.csprojAssemblyReference.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Web/obj/Debug/netcoreapp3.1/EmailMessageRouter.Web.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Web/obj/Debug/netcoreapp3.1/EmailMessageRouter.Web.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Web/obj/Debug/netcoreapp3.1/EmailMessageRouter.Web.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Web/obj/Debug/netcoreapp3.1/staticwebassets/EmailMessageRouter.Web.StaticWebAssets.Manifest.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Web/obj/Debug/netcoreapp3.1/staticwebassets/EmailMessageRouter.Web.StaticWebAssets.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Web/obj/EmailMessageRouter.Web.csproj.nuget.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Web/obj/EmailMessageRouter.Web.csproj.nuget.dgspec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Web/obj/EmailMessageRouter.Web.csproj.nuget.g.props" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Web/obj/EmailMessageRouter.Web.csproj.nuget.g.targets" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Web/obj/project.assets.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Web/obj/project.packagespec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.sln" afterDir="false" />
-    </list>
+    <list default="true" id="513a42b6-4947-4226-a385-daa39a8c8081" name="Default Changelist" comment="Initial commit" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -385,8 +210,16 @@
       <option name="presentableId" value="Default" />
       <updated>1580681354017</updated>
       <workItem from="1580681357735" duration="8292000" />
-      <workItem from="1580689709889" duration="59588000" />
+      <workItem from="1580689709889" duration="60008000" />
     </task>
+    <task id="LOCAL-00001" summary="Initial commit">
+      <created>1580951973083</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1580951973084</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -394,6 +227,10 @@
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="206" y="136" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1580690642129">
       <screen x="0" y="0" width="1500" height="960" />
@@ -513,6 +350,10 @@
       <screen x="0" y="0" width="1500" height="960" />
     </state>
     <state x="252" y="123" key="SettingsEditor/0.0.1500.960@0.0.1500.960" timestamp="1580951759942" />
+    <state x="343" y="214" key="Vcs.Push.Dialog.v2" timestamp="1580952297578">
+      <screen x="0" y="0" width="1500" height="960" />
+    </state>
+    <state x="343" y="214" key="Vcs.Push.Dialog.v2/0.0.1500.960@0.0.1500.960" timestamp="1580952297578" />
     <state width="756" height="486" key="XDebugger.FullValuePopup" timestamp="1580919776699">
       <screen x="0" y="0" width="1500" height="960" />
     </state>
