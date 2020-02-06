@@ -15,7 +15,7 @@ Use the following dotnet command from project root folder to build application
 **dotnet build**
 
 ### Test
-Execute the following command at application root folder after a sucessful build
+Run the following command at root folder after a sucessful build to run automated tests.
 
 **dotnet test**
 
@@ -50,6 +50,9 @@ POST api/v1/routing
     "total": 2
 }
 ```
+
+submit request a POST request to endpoint then check application console log to test application behavior.
+
 ## Akka.NET Info
 Actor class are not instantiated directly but instead by passing a 
 Prop to actor system which creates and manages the lifecycle of actor processes.
