@@ -51,7 +51,7 @@ POST api/v1/routing
 }
 ```
 
-submit request a POST request to endpoint then check application console log to test application behavior.
+submit a POST request to endpoint then check application console log to test application behavior.
 
 ## Akka.NET Info
 Actor class are not instantiated directly but instead by passing a 
