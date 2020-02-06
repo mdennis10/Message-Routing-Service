@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\mario\.Rider2019.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\mario\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_EmailMessageRouter.110245181.00" t="ExcludeRecursive" />
+    <e p="C:\Users\mario\RiderProjects\EmailMessageRouter" t="IncludeFlat">
+      <e p="EmailMessageRouter.Data" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Cache" t="Include">
+          <e p="ICache.cs" t="Include" />
+          <e p="InMemoryCache.cs" t="Include" />
+        </e>
+        <e p="EmailMessageRouter.Data.csproj" t="IncludeRecursive" />
+        <e p="EntityModel" t="Include">
+          <e p="Account.cs" t="Include" />
+          <e p="MessageRequest.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="EmailMessageRouter.Data.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Repositories" t="Include">
+          <e p="AccountRepositoryImpl.cs" t="Include" />
+          <e p="IAccountRepository.cs" t="Include" />
+          <e p="IMessageRequestRepository.cs" t="Include" />
+          <e p="IRepository.cs" t="Include" />
+          <e p="MessageRequestRepositoryImpl.cs" t="Include" />
+        </e>
+      </e>
+      <e p="EmailMessageRouter.Domain" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="EmailMessageRouter.Domain.csproj" t="IncludeRecursive" />
+        <e p="Handlers" t="Include">
+          <e p="AbstractHandler.cs" t="Include" />
+          <e p="IEmailHandler.cs" t="Include" />
+          <e p="IHandler.cs" t="Include" />
+          <e p="MessageReputationScoreHandler.cs" t="Include" />
+          <e p="SenderReputationScoreHandler.cs" t="Include" />
+        </e>
+        <e p="Model" t="Include">
+          <e p="EmailMessage.cs" t="Include" />
+          <e p="MessageType.cs" t="Include" />
+          <e p="ValidationResult.cs" t="Include" />
+          <e p="ValidationResults.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="EmailMessageRouter.Domain.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Services" t="Include">
+          <e p="EmailDeliveryServiceImpl.cs" t="Include" />
+          <e p="IEmailDeliveryService.cs" t="Include" />
+          <e p="IMessageRoutingService.cs" t="Include" />
+          <e p="MessageRoutingService.cs" t="Include" />
+        </e>
+        <e p="Validation" t="Include">
+          <e p="EmailValidator.cs" t="Include" />
+          <e p="IEmailValidationRule.cs" t="Include" />
+          <e p="IValidationRule.cs" t="Include" />
+          <e p="RecipientSubscribeRule.cs" t="Include" />
+          <e p="SourceEmailValidationRule.cs" t="Include" />
+        </e>
+      </e>
+      <e p="EmailMessageRouter.Processor" t="IncludeRecursive">
+        <e p="Actors" t="Include">
+          <e p="MessageHandlerExecutorActor.cs" t="Include" />
+          <e p="MessageResolverActor.cs" t="Include" />
+          <e p="MessageRoutingManagerActor.cs" t="Include" />
+          <e p="MessageSendingActor.cs" t="Include" />
+          <e p="MessageValidationActor.cs" t="Include" />
+        </e>
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="EmailMessageRouter.Processor.csproj" t="IncludeRecursive" />
+        <e p="Messages" t="Include">
+          <e p="AbstractMsg.cs" t="Include" />
+          <e p="EmailDisqualifiedMsg.cs" t="Include" />
+          <e p="EmailQualifyMsg.cs" t="Include" />
+          <e p="EmailRequestMsg.cs" t="Include" />
+          <e p="EmailResolvedMsg.cs" t="Include" />
+          <e p="ExecuteHandlersMsg.cs" t="Include" />
+          <e p="ResolveEmailTypeMsg.cs" t="Include" />
+          <e p="SendBatchEmailsMsg.cs" t="Include" />
+          <e p="SendEmailMsg.cs" t="Include" />
+          <e p="ValidateEmailMsg.cs" t="Include" />
+        </e>
+        <e p="Model" t="Include">
+          <e p="BulkEmailQueue.cs" t="Include" />
+          <e p="Email.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="EmailMessageRouter.Processor.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="EmailMessageRouter.sln" t="IncludeFlat" />
+      <e p="EmailMessageRouter.Web" t="IncludeRecursive">
+        <e p="appsettings.Development.json" t="Include" />
+        <e p="appsettings.json" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Controllers" t="Include">
+          <e p="RoutingController.cs" t="Include" />
+        </e>
+        <e p="EmailMessageRouter.Web.csproj" t="IncludeRecursive" />
+        <e p="EntityModel" t="Include">
+          <e p="PostmarkEmail.cs" t="Include" />
+          <e p="PostmarkEmailResponse.cs" t="Include" />
+        </e>
+        <e p="Message Routing Service.docx" t="Include" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="EmailMessageRouter.Web.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="launchSettings.json" t="Include" />
+        </e>
+        <e p="README.md" t="Include" />
+        <e p="Startup.cs" t="Include" />
+      </e>
+      <e p="packages" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>

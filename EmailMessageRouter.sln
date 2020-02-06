@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailMessageRouter.Web", "EmailMessageRouter.Web\EmailMessageRouter.Web.csproj", "{17FBC633-80CC-4DCE-9366-81C91914566B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailMessageRouter.Processor", "EmailMessageRouter.Processor\EmailMessageRouter.Processor.csproj", "{53CCDAE8-161C-406F-8373-4B9685FA695E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailMessageRouter.Data", "EmailMessageRouter.Data\EmailMessageRouter.Data.csproj", "{0F51F874-4133-4C5B-87EC-19FA7F7979E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailMessageRouter.Domain", "EmailMessageRouter.Domain\EmailMessageRouter.Domain.csproj", "{72872D29-097A-49D9-923B-299580F36C33}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{17FBC633-80CC-4DCE-9366-81C91914566B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17FBC633-80CC-4DCE-9366-81C91914566B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17FBC633-80CC-4DCE-9366-81C91914566B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17FBC633-80CC-4DCE-9366-81C91914566B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53CCDAE8-161C-406F-8373-4B9685FA695E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53CCDAE8-161C-406F-8373-4B9685FA695E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53CCDAE8-161C-406F-8373-4B9685FA695E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53CCDAE8-161C-406F-8373-4B9685FA695E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F51F874-4133-4C5B-87EC-19FA7F7979E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F51F874-4133-4C5B-87EC-19FA7F7979E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F51F874-4133-4C5B-87EC-19FA7F7979E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F51F874-4133-4C5B-87EC-19FA7F7979E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72872D29-097A-49D9-923B-299580F36C33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72872D29-097A-49D9-923B-299580F36C33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72872D29-097A-49D9-923B-299580F36C33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72872D29-097A-49D9-923B-299580F36C33}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

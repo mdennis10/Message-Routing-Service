@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+        <RootNamespace>EmailMessageRouter.Processor</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Akka" Version="1.3.17" />
+      <PackageReference Include="Akka.Persistence" Version="1.3.17" />
+      <PackageReference Include="AutoMapper" Version="9.0.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\EmailMessageRouter.Domain\EmailMessageRouter.Domain.csproj" />
+    </ItemGroup>
+
+</Project>

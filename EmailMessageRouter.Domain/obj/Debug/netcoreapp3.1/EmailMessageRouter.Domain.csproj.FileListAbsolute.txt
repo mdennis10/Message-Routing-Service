@@ -1,0 +1,11 @@
+C:\Users\mario\RiderProjects\EmailMessageRouter\EmailMessageRouter.Domain\bin\Debug\netcoreapp3.1\EmailMessageRouter.Domain.deps.json
+C:\Users\mario\RiderProjects\EmailMessageRouter\EmailMessageRouter.Domain\bin\Debug\netcoreapp3.1\EmailMessageRouter.Domain.dll
+C:\Users\mario\RiderProjects\EmailMessageRouter\EmailMessageRouter.Domain\bin\Debug\netcoreapp3.1\EmailMessageRouter.Domain.pdb
+C:\Users\mario\RiderProjects\EmailMessageRouter\EmailMessageRouter.Domain\obj\Debug\netcoreapp3.1\EmailMessageRouter.Domain.csprojAssemblyReference.cache
+C:\Users\mario\RiderProjects\EmailMessageRouter\EmailMessageRouter.Domain\obj\Debug\netcoreapp3.1\EmailMessageRouter.Domain.AssemblyInfoInputs.cache
+C:\Users\mario\RiderProjects\EmailMessageRouter\EmailMessageRouter.Domain\obj\Debug\netcoreapp3.1\EmailMessageRouter.Domain.AssemblyInfo.cs
+C:\Users\mario\RiderProjects\EmailMessageRouter\EmailMessageRouter.Domain\obj\Debug\netcoreapp3.1\EmailMessageRouter.Domain.dll
+C:\Users\mario\RiderProjects\EmailMessageRouter\EmailMessageRouter.Domain\obj\Debug\netcoreapp3.1\EmailMessageRouter.Domain.pdb
+C:\Users\mario\RiderProjects\EmailMessageRouter\EmailMessageRouter.Domain\bin\Debug\netcoreapp3.1\EmailMessageRouter.Data.dll
+C:\Users\mario\RiderProjects\EmailMessageRouter\EmailMessageRouter.Domain\bin\Debug\netcoreapp3.1\EmailMessageRouter.Data.pdb
+C:\Users\mario\RiderProjects\EmailMessageRouter\EmailMessageRouter.Domain\obj\Debug\netcoreapp3.1\EmailMessageRouter.Domain.csproj.CopyComplete
