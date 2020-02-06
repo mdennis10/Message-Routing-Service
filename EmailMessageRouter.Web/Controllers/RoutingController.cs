@@ -51,9 +51,9 @@ namespace EmailMessageRouter.Web.Controllers
         [Consumes(MediaTypeNames.Application.Json)]
         [ProducesResponseType(StatusCodes.Status202Accepted)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public Task<AcceptedResult> MessageRouter([FromBody] List<PostmarkEmail> emailMessages)
+        public async Task<AcceptedResult> MessageRouter([FromBody] List<PostmarkEmail> emailMessages)
         {
-            return Task.Run(() =>
+            return await Task.Run(() =>
             {
                 var emails = _mapper.Map<List<PostmarkEmail>, List<Email>>(emailMessages);
                 var msg = new EmailRequestMsg(emails);

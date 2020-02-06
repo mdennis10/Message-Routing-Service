@@ -15,8 +15,9 @@ namespace EmailMessageRouter.Domain.Services
         public MessageRoutingServiceImpl(
             IAccountRepository accountRepository,
             IMessageRequestRepository messageRequestRepository,
-            ICache<string, Account> _cache)
+            ICache<string, Account> cache)
         {
+            _cache = cache;
             _accountRepository = accountRepository;
             _messageRequestRepository = messageRequestRepository;
         }
