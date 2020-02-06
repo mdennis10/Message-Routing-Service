@@ -20,11 +20,14 @@ Execute the following command at application root folder after a sucessful build
 **dotnet test**
 
 ### Run
-To run 
-dotnet EmailMessageRouter.Web/bin/Debug/netcoreapp3.1/EmailMessageRouter.Web.dll
+To run application 
+
+**dotnet EmailMessageRouter.Web/bin/Debug/netcoreapp3.1/EmailMessageRouter.Web.dll**
 
 # REST EndPoint
-api/v1/routing
+POST api/v1/routing
+
+**Request Body**
 ```
 [{
 	"From": "sender@example.com", 
@@ -38,6 +41,13 @@ api/v1/routing
 	"HtmlBody": "<html><body><strong>Hello</strong> dear Postmark user.</body></html>"
 }]
 ```
+
+**Response Body**
+{
+    "requestId": "618da6f6-dcc0-4221-b032-b5047a5f1e8b",
+    "created": "2020-02-05T22:41:10.1086697-05:00",
+    "total": 2
+}
 
 # Akka.NET Info
 Actor class are not instantiated directly but instead by passing a 
