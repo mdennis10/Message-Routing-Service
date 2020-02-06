@@ -14,7 +14,7 @@ namespace EmailMessageRouter.Processor.Actors
     /// MessageValidationActor apply all configured validations
     /// to determine if a email should be sent or not. 
     /// </summary>
-    public class MessageValidationActor : ReceivePersistentActor
+    public class MessageValidationActor : BasePersistentActor
     {
         public override string PersistenceId => "EmailMessageRouter.Processor.Actors.ValidationActor";
         private readonly IMessageRoutingService _messageRoutingService;
@@ -25,7 +25,8 @@ namespace EmailMessageRouter.Processor.Actors
             IMessageRoutingService messageRoutingService, 
             IAccountRepository accountRepository, 
             Mapper mapper,
-            IDictionary<string, bool> validationRulesSettings)
+            IDictionary<string, bool> validationRulesSettings) 
+        : base("MessageValidationActor")
         {
             _messageRoutingService = messageRoutingService;
             _accountRepository = accountRepository;

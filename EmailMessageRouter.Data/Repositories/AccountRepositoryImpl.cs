@@ -11,18 +11,25 @@ namespace EmailMessageRouter.Data.Repositories
 
         public long SaveOrUpdate(Account entity)
         {
-            throw new System.NotImplementedException();
+            // mock implementation
+            return 1;
         }
 
         public void Delete(Account entity)
         {
-            throw new System.NotImplementedException();
+            // mock implementation
         }
 
         public Account FindByEmail(string email)
         {
             // this is just a mock therefore no implementation will be provided
-            throw new System.NotImplementedException();
+            return new Account
+            {
+                Email = email,
+                IsActive = true,
+                AccountId = 1,
+                SupportedMessageType = 1
+            };
         }
     }
 }

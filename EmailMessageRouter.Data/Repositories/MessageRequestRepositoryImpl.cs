@@ -7,17 +7,18 @@ namespace EmailMessageRouter.Data.Repositories
     {
         public MessageRequest Find(Guid key)
         {
-            throw new NotImplementedException();
+            return new MessageRequest();
         }
 
         public Guid SaveOrUpdate(MessageRequest entity)
         {
-            throw new NotImplementedException();
+            // this just mocks save or update operation
+            return Guid.NewGuid();
         }
 
         public void Delete(MessageRequest entity)
         {
-            throw new NotImplementedException();
+            // implementation does here
         }
     }
 }

@@ -1,121 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="513a42b6-4947-4226-a385-daa39a8c8081" name="Default Changelist" comment="remove async/await">
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain.Test/EmailMessageRouter.Domain.Test.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain.Test/Handlers/MessageReputationScoreHandlerTest.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain.Test/Services/MessageRoutingServiceTest.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain.Test/bin/Debug/netcoreapp3.1/EmailMessageRouter.Domain.Test.deps.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain.Test/bin/Debug/netcoreapp3.1/EmailMessageRouter.Domain.Test.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain.Test/bin/Debug/netcoreapp3.1/EmailMessageRouter.Domain.Test.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain.Test/bin/Debug/netcoreapp3.1/EmailMessageRouter.Domain.Test.runtimeconfig.dev.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain.Test/bin/Debug/netcoreapp3.1/EmailMessageRouter.Domain.Test.runtimeconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain.Test/bin/Debug/netcoreapp3.1/Microsoft.DotNet.InternalAbstractions.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain.Test/bin/Debug/netcoreapp3.1/Microsoft.TestPlatform.CommunicationUtilities.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain.Test/bin/Debug/netcoreapp3.1/Microsoft.TestPlatform.CoreUtilities.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain.Test/bin/Debug/netcoreapp3.1/Microsoft.TestPlatform.CrossPlatEngine.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain.Test/bin/Debug/netcoreapp3.1/Microsoft.TestPlatform.PlatformAbstractions.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain.Test/bin/Debug/netcoreapp3.1/Microsoft.TestPlatform.Utilities.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain.Test/bin/Debug/netcoreapp3.1/Microsoft.VisualStudio.CodeCoverage.Shim.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain.Test/bin/Debug/netcoreapp3.1/Microsoft.VisualStudio.TestPlatform.Common.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain.Test/bin/Debug/netcoreapp3.1/Microsoft.VisualStudio.TestPlatform.ObjectModel.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain.Test/bin/Debug/netcoreapp3.1/NUnit3.TestAdapter.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain.Test/bin/Debug/netcoreapp3.1/NUnit3.TestAdapter.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain.Test/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain.Test/bin/Debug/netcoreapp3.1/NuGet.Frameworks.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain.Test/bin/Debug/netcoreapp3.1/System.Xml.XPath.XmlDocument.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain.Test/bin/Debug/netcoreapp3.1/cs/Microsoft.TestPlatform.CommunicationUtilities.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain.Test/bin/Debug/netcoreapp3.1/cs/Microsoft.TestPlatform.CoreUtilities.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain.Test/bin/Debug/netcoreapp3.1/cs/Microsoft.TestPlatform.CrossPlatEngine.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain.Test/bin/Debug/netcoreapp3.1/cs/Microsoft.VisualStudio.TestPlatform.Common.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain.Test/bin/Debug/netcoreapp3.1/cs/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain.Test/bin/Debug/netcoreapp3.1/de/Microsoft.TestPlatform.CommunicationUtilities.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain.Test/bin/Debug/netcoreapp3.1/de/Microsoft.TestPlatform.CoreUtilities.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain.Test/bin/Debug/netcoreapp3.1/de/Microsoft.TestPlatform.CrossPlatEngine.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain.Test/bin/Debug/netcoreapp3.1/de/Microsoft.VisualStudio.TestPlatform.Common.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain.Test/bin/Debug/netcoreapp3.1/de/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain.Test/bin/Debug/netcoreapp3.1/es/Microsoft.TestPlatform.CommunicationUtilities.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain.Test/bin/Debug/netcoreapp3.1/es/Microsoft.TestPlatform.CoreUtilities.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain.Test/bin/Debug/netcoreapp3.1/es/Microsoft.TestPlatform.CrossPlatEngine.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain.Test/bin/Debug/netcoreapp3.1/es/Microsoft.VisualStudio.TestPlatform.Common.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain.Test/bin/Debug/netcoreapp3.1/es/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain.Test/bin/Debug/netcoreapp3.1/fr/Microsoft.TestPlatform.CommunicationUtilities.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain.Test/bin/Debug/netcoreapp3.1/fr/Microsoft.TestPlatform.CoreUtilities.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain.Test/bin/Debug/netcoreapp3.1/fr/Microsoft.TestPlatform.CrossPlatEngine.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain.Test/bin/Debug/netcoreapp3.1/fr/Microsoft.VisualStudio.TestPlatform.Common.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain.Test/bin/Debug/netcoreapp3.1/fr/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain.Test/bin/Debug/netcoreapp3.1/it/Microsoft.TestPlatform.CommunicationUtilities.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain.Test/bin/Debug/netcoreapp3.1/it/Microsoft.TestPlatform.CoreUtilities.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain.Test/bin/Debug/netcoreapp3.1/it/Microsoft.TestPlatform.CrossPlatEngine.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain.Test/bin/Debug/netcoreapp3.1/it/Microsoft.VisualStudio.TestPlatform.Common.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain.Test/bin/Debug/netcoreapp3.1/it/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain.Test/bin/Debug/netcoreapp3.1/ja/Microsoft.TestPlatform.CommunicationUtilities.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain.Test/bin/Debug/netcoreapp3.1/ja/Microsoft.TestPlatform.CoreUtilities.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain.Test/bin/Debug/netcoreapp3.1/ja/Microsoft.TestPlatform.CrossPlatEngine.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain.Test/bin/Debug/netcoreapp3.1/ja/Microsoft.VisualStudio.TestPlatform.Common.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain.Test/bin/Debug/netcoreapp3.1/ja/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain.Test/bin/Debug/netcoreapp3.1/ko/Microsoft.TestPlatform.CommunicationUtilities.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain.Test/bin/Debug/netcoreapp3.1/ko/Microsoft.TestPlatform.CoreUtilities.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain.Test/bin/Debug/netcoreapp3.1/ko/Microsoft.TestPlatform.CrossPlatEngine.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain.Test/bin/Debug/netcoreapp3.1/ko/Microsoft.VisualStudio.TestPlatform.Common.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain.Test/bin/Debug/netcoreapp3.1/ko/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain.Test/bin/Debug/netcoreapp3.1/nunit.engine.api.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain.Test/bin/Debug/netcoreapp3.1/nunit.engine.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain.Test/bin/Debug/netcoreapp3.1/nunit.framework.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain.Test/bin/Debug/netcoreapp3.1/nunit_random_seed.tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain.Test/bin/Debug/netcoreapp3.1/pl/Microsoft.TestPlatform.CommunicationUtilities.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain.Test/bin/Debug/netcoreapp3.1/pl/Microsoft.TestPlatform.CoreUtilities.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain.Test/bin/Debug/netcoreapp3.1/pl/Microsoft.TestPlatform.CrossPlatEngine.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain.Test/bin/Debug/netcoreapp3.1/pl/Microsoft.VisualStudio.TestPlatform.Common.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain.Test/bin/Debug/netcoreapp3.1/pl/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain.Test/bin/Debug/netcoreapp3.1/pt-BR/Microsoft.TestPlatform.CommunicationUtilities.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain.Test/bin/Debug/netcoreapp3.1/pt-BR/Microsoft.TestPlatform.CoreUtilities.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain.Test/bin/Debug/netcoreapp3.1/pt-BR/Microsoft.TestPlatform.CrossPlatEngine.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain.Test/bin/Debug/netcoreapp3.1/pt-BR/Microsoft.VisualStudio.TestPlatform.Common.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain.Test/bin/Debug/netcoreapp3.1/pt-BR/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain.Test/bin/Debug/netcoreapp3.1/ru/Microsoft.TestPlatform.CommunicationUtilities.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain.Test/bin/Debug/netcoreapp3.1/ru/Microsoft.TestPlatform.CoreUtilities.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain.Test/bin/Debug/netcoreapp3.1/ru/Microsoft.TestPlatform.CrossPlatEngine.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain.Test/bin/Debug/netcoreapp3.1/ru/Microsoft.VisualStudio.TestPlatform.Common.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain.Test/bin/Debug/netcoreapp3.1/ru/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain.Test/bin/Debug/netcoreapp3.1/testhost.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain.Test/bin/Debug/netcoreapp3.1/tr/Microsoft.TestPlatform.CommunicationUtilities.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain.Test/bin/Debug/netcoreapp3.1/tr/Microsoft.TestPlatform.CoreUtilities.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain.Test/bin/Debug/netcoreapp3.1/tr/Microsoft.TestPlatform.CrossPlatEngine.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain.Test/bin/Debug/netcoreapp3.1/tr/Microsoft.VisualStudio.TestPlatform.Common.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain.Test/bin/Debug/netcoreapp3.1/tr/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain.Test/bin/Debug/netcoreapp3.1/zh-Hans/Microsoft.TestPlatform.CommunicationUtilities.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain.Test/bin/Debug/netcoreapp3.1/zh-Hans/Microsoft.TestPlatform.CoreUtilities.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain.Test/bin/Debug/netcoreapp3.1/zh-Hans/Microsoft.TestPlatform.CrossPlatEngine.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain.Test/bin/Debug/netcoreapp3.1/zh-Hans/Microsoft.VisualStudio.TestPlatform.Common.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain.Test/bin/Debug/netcoreapp3.1/zh-Hans/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain.Test/bin/Debug/netcoreapp3.1/zh-Hant/Microsoft.TestPlatform.CommunicationUtilities.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain.Test/bin/Debug/netcoreapp3.1/zh-Hant/Microsoft.TestPlatform.CoreUtilities.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain.Test/bin/Debug/netcoreapp3.1/zh-Hant/Microsoft.TestPlatform.CrossPlatEngine.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain.Test/bin/Debug/netcoreapp3.1/zh-Hant/Microsoft.VisualStudio.TestPlatform.Common.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain.Test/bin/Debug/netcoreapp3.1/zh-Hant/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain.Test/obj/Debug/netcoreapp3.1/EmailMessageRouter.Domain.Test.AssemblyInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain.Test/obj/Debug/netcoreapp3.1/EmailMessageRouter.Domain.Test.AssemblyInfoInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain.Test/obj/Debug/netcoreapp3.1/EmailMessageRouter.Domain.Test.assets.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain.Test/obj/Debug/netcoreapp3.1/EmailMessageRouter.Domain.Test.csproj.CopyComplete" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain.Test/obj/Debug/netcoreapp3.1/EmailMessageRouter.Domain.Test.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain.Test/obj/Debug/netcoreapp3.1/EmailMessageRouter.Domain.Test.csprojAssemblyReference.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain.Test/obj/Debug/netcoreapp3.1/EmailMessageRouter.Domain.Test.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain.Test/obj/Debug/netcoreapp3.1/EmailMessageRouter.Domain.Test.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain.Test/obj/EmailMessageRouter.Domain.Test.csproj.nuget.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain.Test/obj/EmailMessageRouter.Domain.Test.csproj.nuget.dgspec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain.Test/obj/EmailMessageRouter.Domain.Test.csproj.nuget.g.props" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain.Test/obj/EmailMessageRouter.Domain.Test.csproj.nuget.g.targets" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain.Test/obj/project.assets.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain.Test/obj/project.packagespec.json" afterDir="false" />
+    <list default="true" id="513a42b6-4947-4226-a385-daa39a8c8081" name="Default Changelist" comment="add a few test">
+      <change afterPath="$PROJECT_DIR$/EmailMessageRouter.Processor/Actors/BasePersistentActor.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.EmailMessageRouter/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.EmailMessageRouter/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.EmailMessageRouter/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.EmailMessageRouter/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.EmailMessageRouter/riderModule.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.EmailMessageRouter/riderModule.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EmailMessageRouter.Domain/Services/MessageRoutingService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain/Services/MessageRoutingServiceImpl.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EmailMessageRouter.Data/Cache/InMemoryCache.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EmailMessageRouter.Data/Cache/InMemoryCache.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EmailMessageRouter.Data/Repositories/AccountRepositoryImpl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EmailMessageRouter.Data/Repositories/AccountRepositoryImpl.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EmailMessageRouter.Data/Repositories/MessageRequestRepositoryImpl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EmailMessageRouter.Data/Repositories/MessageRequestRepositoryImpl.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EmailMessageRouter.Data/bin/Debug/netcoreapp3.1/EmailMessageRouter.Data.dll" beforeDir="false" afterPath="$PROJECT_DIR$/EmailMessageRouter.Data/bin/Debug/netcoreapp3.1/EmailMessageRouter.Data.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EmailMessageRouter.Data/bin/Debug/netcoreapp3.1/EmailMessageRouter.Data.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/EmailMessageRouter.Data/bin/Debug/netcoreapp3.1/EmailMessageRouter.Data.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EmailMessageRouter.Data/obj/Debug/netcoreapp3.1/EmailMessageRouter.Data.dll" beforeDir="false" afterPath="$PROJECT_DIR$/EmailMessageRouter.Data/obj/Debug/netcoreapp3.1/EmailMessageRouter.Data.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EmailMessageRouter.Data/obj/Debug/netcoreapp3.1/EmailMessageRouter.Data.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/EmailMessageRouter.Data/obj/Debug/netcoreapp3.1/EmailMessageRouter.Data.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EmailMessageRouter.Domain.Test/obj/Debug/netcoreapp3.1/EmailMessageRouter.Domain.Test.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain.Test/obj/Debug/netcoreapp3.1/EmailMessageRouter.Domain.Test.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EmailMessageRouter.Domain/Services/EmailDeliveryServiceImpl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain/Services/EmailDeliveryServiceImpl.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EmailMessageRouter.Domain/bin/Debug/netcoreapp3.1/EmailMessageRouter.Data.dll" beforeDir="false" afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain/bin/Debug/netcoreapp3.1/EmailMessageRouter.Data.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EmailMessageRouter.Domain/bin/Debug/netcoreapp3.1/EmailMessageRouter.Data.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain/bin/Debug/netcoreapp3.1/EmailMessageRouter.Data.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EmailMessageRouter.Domain/bin/Debug/netcoreapp3.1/EmailMessageRouter.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain/bin/Debug/netcoreapp3.1/EmailMessageRouter.Domain.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EmailMessageRouter.Domain/bin/Debug/netcoreapp3.1/EmailMessageRouter.Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain/bin/Debug/netcoreapp3.1/EmailMessageRouter.Domain.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EmailMessageRouter.Domain/obj/Debug/netcoreapp3.1/EmailMessageRouter.Domain.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain/obj/Debug/netcoreapp3.1/EmailMessageRouter.Domain.csprojAssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EmailMessageRouter.Domain/obj/Debug/netcoreapp3.1/EmailMessageRouter.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain/obj/Debug/netcoreapp3.1/EmailMessageRouter.Domain.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EmailMessageRouter.Domain/obj/Debug/netcoreapp3.1/EmailMessageRouter.Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain/obj/Debug/netcoreapp3.1/EmailMessageRouter.Domain.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EmailMessageRouter.Processor/Actors/MessageHandlerExecutorActor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EmailMessageRouter.Processor/Actors/MessageHandlerExecutorActor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EmailMessageRouter.Processor/Actors/MessageResolverActor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EmailMessageRouter.Processor/Actors/MessageResolverActor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EmailMessageRouter.Processor/Actors/MessageRoutingManagerActor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EmailMessageRouter.Processor/Actors/MessageRoutingManagerActor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EmailMessageRouter.Processor/Actors/MessageSendingActor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EmailMessageRouter.Processor/Actors/MessageSendingActor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EmailMessageRouter.Processor/Actors/MessageValidationActor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EmailMessageRouter.Processor/Actors/MessageValidationActor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EmailMessageRouter.Processor/bin/Debug/netcoreapp3.1/EmailMessageRouter.Data.dll" beforeDir="false" afterPath="$PROJECT_DIR$/EmailMessageRouter.Processor/bin/Debug/netcoreapp3.1/EmailMessageRouter.Data.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EmailMessageRouter.Processor/bin/Debug/netcoreapp3.1/EmailMessageRouter.Data.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/EmailMessageRouter.Processor/bin/Debug/netcoreapp3.1/EmailMessageRouter.Data.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EmailMessageRouter.Processor/bin/Debug/netcoreapp3.1/EmailMessageRouter.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/EmailMessageRouter.Processor/bin/Debug/netcoreapp3.1/EmailMessageRouter.Domain.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EmailMessageRouter.Processor/bin/Debug/netcoreapp3.1/EmailMessageRouter.Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/EmailMessageRouter.Processor/bin/Debug/netcoreapp3.1/EmailMessageRouter.Domain.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EmailMessageRouter.Processor/bin/Debug/netcoreapp3.1/EmailMessageRouter.Processor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/EmailMessageRouter.Processor/bin/Debug/netcoreapp3.1/EmailMessageRouter.Processor.dll" afterDir="false" />
@@ -123,6 +35,10 @@
       <change beforePath="$PROJECT_DIR$/EmailMessageRouter.Processor/obj/Debug/netcoreapp3.1/EmailMessageRouter.Processor.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/EmailMessageRouter.Processor/obj/Debug/netcoreapp3.1/EmailMessageRouter.Processor.csprojAssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EmailMessageRouter.Processor/obj/Debug/netcoreapp3.1/EmailMessageRouter.Processor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/EmailMessageRouter.Processor/obj/Debug/netcoreapp3.1/EmailMessageRouter.Processor.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EmailMessageRouter.Processor/obj/Debug/netcoreapp3.1/EmailMessageRouter.Processor.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/EmailMessageRouter.Processor/obj/Debug/netcoreapp3.1/EmailMessageRouter.Processor.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EmailMessageRouter.Web/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EmailMessageRouter.Web/Startup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EmailMessageRouter.Web/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/EmailMessageRouter.Web/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EmailMessageRouter.Web/bin/Debug/netcoreapp3.1/EmailMessageRouter.Data.dll" beforeDir="false" afterPath="$PROJECT_DIR$/EmailMessageRouter.Web/bin/Debug/netcoreapp3.1/EmailMessageRouter.Data.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EmailMessageRouter.Web/bin/Debug/netcoreapp3.1/EmailMessageRouter.Data.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/EmailMessageRouter.Web/bin/Debug/netcoreapp3.1/EmailMessageRouter.Data.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EmailMessageRouter.Web/bin/Debug/netcoreapp3.1/EmailMessageRouter.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/EmailMessageRouter.Web/bin/Debug/netcoreapp3.1/EmailMessageRouter.Domain.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EmailMessageRouter.Web/bin/Debug/netcoreapp3.1/EmailMessageRouter.Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/EmailMessageRouter.Web/bin/Debug/netcoreapp3.1/EmailMessageRouter.Domain.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EmailMessageRouter.Web/bin/Debug/netcoreapp3.1/EmailMessageRouter.Processor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/EmailMessageRouter.Web/bin/Debug/netcoreapp3.1/EmailMessageRouter.Processor.dll" afterDir="false" />
@@ -132,7 +48,6 @@
       <change beforePath="$PROJECT_DIR$/EmailMessageRouter.Web/obj/Debug/netcoreapp3.1/EmailMessageRouter.Web.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/EmailMessageRouter.Web/obj/Debug/netcoreapp3.1/EmailMessageRouter.Web.csprojAssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EmailMessageRouter.Web/obj/Debug/netcoreapp3.1/EmailMessageRouter.Web.dll" beforeDir="false" afterPath="$PROJECT_DIR$/EmailMessageRouter.Web/obj/Debug/netcoreapp3.1/EmailMessageRouter.Web.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EmailMessageRouter.Web/obj/Debug/netcoreapp3.1/EmailMessageRouter.Web.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/EmailMessageRouter.Web/obj/Debug/netcoreapp3.1/EmailMessageRouter.Web.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EmailMessageRouter.sln" beforeDir="false" afterPath="$PROJECT_DIR$/EmailMessageRouter.sln" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -194,6 +109,8 @@
     <setting file="file://$PROJECT_DIR$/EmailMessageRouter.Processor/Messages/EmailRequestMsg.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/34407E25-BA46-4E06-A647-097A70DCA4D9/13/3a9d1eae/ICanTell.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/34407E25-BA46-4E06-A647-097A70DCA4D9/73/b84145de/ActorRefs.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/EmailMessageRouter.Domain.Test/obj/Debug/netcoreapp3.1/EmailMessageRouter.Domain.Test.AssemblyInfo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/EmailMessageRouter.Processor/Actors/BasePersistentActor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/EmailMessageRouter.Web/EntityModel/PostmarkEmailResponse.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/D51C8BFE-FF95-46E3-A15C-7A8DF84556C2/1A/RegularExpressionAttribute.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/EmailMessageRouter.Web/Controllers/RoutingController.cs" root0="FORCE_HIGHLIGHTING" />
@@ -208,9 +125,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/EmailMessageRouter.Web/appconfig.json" />
-        <option value="$PROJECT_DIR$/EmailMessageRouter.Processor/Actors/MessageSendingActor.cs" />
-        <option value="$PROJECT_DIR$/EmailMessageRouter.Processor/Messages/EmailResolvedMsg.cs" />
         <option value="$PROJECT_DIR$/EmailMessageRouter.Processor/Messages/EmailQualifiedMsg.cs" />
         <option value="$PROJECT_DIR$/EmailMessageRouter.Processor/Messages/EmailQualifyMsg.cs" />
         <option value="$PROJECT_DIR$/EmailMessageRouter.Domain/Services/RestEmailDeliveryServiceImpl.cs" />
@@ -221,11 +135,8 @@
         <option value="$PROJECT_DIR$/EmailMessageRouter.Data/Repositories/IRepository.cs" />
         <option value="$PROJECT_DIR$/EmailMessageRouter.Data/Repositories/IAccountEmailRepository.cs" />
         <option value="$PROJECT_DIR$/EmailMessageRouter.Data/Repositories/IAccountRepository.cs" />
-        <option value="$PROJECT_DIR$/EmailMessageRouter.Data/Repositories/AccountRepositoryImpl.cs" />
         <option value="$PROJECT_DIR$/EmailMessageRouter.Data/Repositories/IMessageRequestRepository.cs" />
-        <option value="$PROJECT_DIR$/EmailMessageRouter.Data/Repositories/MessageRequestRepositoryImpl.cs" />
         <option value="$PROJECT_DIR$/EmailMessageRouter.Data/EntityModel/MessageRequest.cs" />
-        <option value="$PROJECT_DIR$/EmailMessageRouter.Data/Cache/InMemoryCache.cs" />
         <option value="$PROJECT_DIR$/EmailMessageRouter.Data/EntityModel/Account.cs" />
         <option value="$PROJECT_DIR$/EmailMessageRouter.Domain/Validation/ActiveAccountValidationRule.cs" />
         <option value="$PROJECT_DIR$/EmailMessageRouter.Domain/Validation/EmailFromAccountRequiredValidationRule.cs" />
@@ -235,7 +146,6 @@
         <option value="$PROJECT_DIR$/EmailMessageRouter.Domain/Model/ValidationResults.cs" />
         <option value="$PROJECT_DIR$/EmailMessageRouter.Processor/Messages/EmailDisqualifiedMsg.cs" />
         <option value="$PROJECT_DIR$/EmailMessageRouter.Domain/Handlers/IEmailHandler.cs" />
-        <option value="$PROJECT_DIR$/EmailMessageRouter.Web/appsettings.json" />
         <option value="$PROJECT_DIR$/EmailMessageRouter.Domain/Validation/SourceEmailValidationRule.cs" />
         <option value="$PROJECT_DIR$/EmailMessageRouter.Domain/Handlers/AbstractHandler.cs" />
         <option value="$PROJECT_DIR$/EmailMessageRouter.Domain/Handlers/IHandler.cs" />
@@ -243,22 +153,29 @@
         <option value="$PROJECT_DIR$/EmailMessageRouter.Processor/Actors/MessageHandlerExecutionActor.cs" />
         <option value="$PROJECT_DIR$/EmailMessageRouter.Domain/Handlers/MessageReputationScoreHandler.cs" />
         <option value="$PROJECT_DIR$/EmailMessageRouter.Domain/Handlers/SenderReputationScoreHandler.cs" />
-        <option value="$PROJECT_DIR$/EmailMessageRouter.Web/Startup.cs" />
         <option value="$PROJECT_DIR$/EmailMessageRouter.Processor/README.md" />
-        <option value="$PROJECT_DIR$/EmailMessageRouter.Processor/Actors/MessageResolverActor.cs" />
         <option value="$PROJECT_DIR$/EmailMessageRouter.Domain/Services/IMessageRoutingService.cs" />
-        <option value="$PROJECT_DIR$/EmailMessageRouter.Processor/Actors/MessageRoutingManagerActor.cs" />
         <option value="$PROJECT_DIR$/EmailMessageRouter.Domain/Services/IEmailDeliveryService.cs" />
-        <option value="$PROJECT_DIR$/EmailMessageRouter.Processor/Actors/MessageHandlerExecutorActor.cs" />
         <option value="$PROJECT_DIR$/EmailMessageRouter.Domain/Validation/EmailValidator.cs" />
-        <option value="$PROJECT_DIR$/EmailMessageRouter.Processor/Actors/MessageValidationActor.cs" />
-        <option value="$PROJECT_DIR$/EmailMessageRouter.Domain/Services/EmailDeliveryServiceImpl.cs" />
         <option value="$PROJECT_DIR$/EmailMessageRouter.Web/README.md" />
         <option value="$PROJECT_DIR$/EmailMessageRouter.Domain/Services/MessageRoutingService.cs" />
         <option value="$PROJECT_DIR$/EmailMessageRouter.Web/Controllers/RoutingController.cs" />
         <option value="$PROJECT_DIR$/EmailMessageRouter.Domain.Test/UnitTest1.cs" />
         <option value="$PROJECT_DIR$/EmailMessageRouter.Domain.Test/Handlers/MessageReputationScoreHandlerTest.cs" />
         <option value="$PROJECT_DIR$/EmailMessageRouter.Domain.Test/Services/MessageRoutingServiceTest.cs" />
+        <option value="$PROJECT_DIR$/EmailMessageRouter.Data/Repositories/MessageRequestRepositoryImpl.cs" />
+        <option value="$PROJECT_DIR$/EmailMessageRouter.Web/Startup.cs" />
+        <option value="$PROJECT_DIR$/EmailMessageRouter.Data/Cache/InMemoryCache.cs" />
+        <option value="$PROJECT_DIR$/EmailMessageRouter.Processor/Actors/BaseMessagePersistentActor.cs" />
+        <option value="$PROJECT_DIR$/EmailMessageRouter.Processor/Actors/MessageHandlerExecutorActor.cs" />
+        <option value="$PROJECT_DIR$/EmailMessageRouter.Processor/Actors/MessageSendingActor.cs" />
+        <option value="$PROJECT_DIR$/EmailMessageRouter.Processor/Actors/MessageValidationActor.cs" />
+        <option value="$PROJECT_DIR$/EmailMessageRouter.Processor/Actors/BasePersistentActor.cs" />
+        <option value="$PROJECT_DIR$/EmailMessageRouter.Processor/Actors/MessageResolverActor.cs" />
+        <option value="$PROJECT_DIR$/EmailMessageRouter.Processor/Actors/MessageRoutingManagerActor.cs" />
+        <option value="$PROJECT_DIR$/EmailMessageRouter.Domain/Services/EmailDeliveryServiceImpl.cs" />
+        <option value="$PROJECT_DIR$/EmailMessageRouter.Data/Repositories/AccountRepositoryImpl.cs" />
+        <option value="$PROJECT_DIR$/EmailMessageRouter.Web/appsettings.json" />
       </list>
     </option>
   </component>
@@ -287,7 +204,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="terminal" />
   </component>
   <component name="RunManager" selected=".NET Launch Settings Profile.EmailMessageRouter.Web">
     <configuration name="EmailMessageRouter.Web" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
@@ -344,7 +261,7 @@
       <option name="presentableId" value="Default" />
       <updated>1580681354017</updated>
       <workItem from="1580681357735" duration="8292000" />
-      <workItem from="1580689709889" duration="65598000" />
+      <workItem from="1580689709889" duration="70347000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1580951973083</created>
@@ -381,7 +298,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580955043681</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="add a few test">
+      <created>1580958837172</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1580958837172</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -394,131 +318,134 @@
     <MESSAGE value="move README.md and Message Routing Service.docx" />
     <MESSAGE value="fix assigment bug" />
     <MESSAGE value="remove async/await" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove async/await" />
+    <MESSAGE value="add a few test" />
+    <option name="LAST_COMMIT_MESSAGE" value="add a few test" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="206" y="136" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1580956152264">
+    <state x="266" y="151" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1580959300367">
       <screen x="0" y="0" width="1500" height="960" />
     </state>
-    <state x="206" y="136" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1500.960/-1366.303.1366.728@0.0.1500.960" timestamp="1580690642129" />
+    <state x="266" y="151" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1500.960/-1366.303.1366.728@0.0.1500.960" timestamp="1580959300367" />
     <state x="206" y="136" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1500.960@0.0.1500.960" timestamp="1580956152264" />
-    <state width="1458" height="338" key="GridCell.Tab.0.bottom" timestamp="1580958609835">
+    <state width="1457" height="338" key="GridCell.Tab.0.bottom" timestamp="1580963670384">
       <screen x="0" y="0" width="1500" height="960" />
     </state>
-    <state width="1458" height="338" key="GridCell.Tab.0.bottom/0.0.1500.960/-1366.303.1366.728@0.0.1500.960" timestamp="1580958609835" />
+    <state width="1457" height="338" key="GridCell.Tab.0.bottom/0.0.1500.960/-1366.303.1366.728@0.0.1500.960" timestamp="1580963670384" />
     <state width="1458" height="338" key="GridCell.Tab.0.bottom/0.0.1500.960@0.0.1500.960" timestamp="1580933565880" />
-    <state width="1458" height="338" key="GridCell.Tab.0.center" timestamp="1580958609835">
+    <state width="1457" height="338" key="GridCell.Tab.0.center" timestamp="1580963670384">
       <screen x="0" y="0" width="1500" height="960" />
     </state>
-    <state width="1458" height="338" key="GridCell.Tab.0.center/0.0.1500.960/-1366.303.1366.728@0.0.1500.960" timestamp="1580958609835" />
+    <state width="1457" height="338" key="GridCell.Tab.0.center/0.0.1500.960/-1366.303.1366.728@0.0.1500.960" timestamp="1580963670384" />
     <state width="1458" height="338" key="GridCell.Tab.0.center/0.0.1500.960@0.0.1500.960" timestamp="1580933565880" />
-    <state width="1458" height="338" key="GridCell.Tab.0.left" timestamp="1580958609835">
+    <state width="1457" height="338" key="GridCell.Tab.0.left" timestamp="1580963670384">
       <screen x="0" y="0" width="1500" height="960" />
     </state>
-    <state width="1458" height="338" key="GridCell.Tab.0.left/0.0.1500.960/-1366.303.1366.728@0.0.1500.960" timestamp="1580958609835" />
+    <state width="1457" height="338" key="GridCell.Tab.0.left/0.0.1500.960/-1366.303.1366.728@0.0.1500.960" timestamp="1580963670384" />
     <state width="1458" height="338" key="GridCell.Tab.0.left/0.0.1500.960@0.0.1500.960" timestamp="1580933565880" />
-    <state width="1458" height="338" key="GridCell.Tab.0.right" timestamp="1580958609835">
+    <state width="1457" height="338" key="GridCell.Tab.0.right" timestamp="1580963670384">
       <screen x="0" y="0" width="1500" height="960" />
     </state>
-    <state width="1458" height="338" key="GridCell.Tab.0.right/0.0.1500.960/-1366.303.1366.728@0.0.1500.960" timestamp="1580958609835" />
+    <state width="1457" height="338" key="GridCell.Tab.0.right/0.0.1500.960/-1366.303.1366.728@0.0.1500.960" timestamp="1580963670384" />
     <state width="1458" height="338" key="GridCell.Tab.0.right/0.0.1500.960@0.0.1500.960" timestamp="1580933565880" />
-    <state width="1458" height="338" key="GridCell.Tab.1.bottom" timestamp="1580958609835">
+    <state width="1457" height="338" key="GridCell.Tab.1.bottom" timestamp="1580963670207">
       <screen x="0" y="0" width="1500" height="960" />
     </state>
-    <state width="1458" height="338" key="GridCell.Tab.1.bottom/0.0.1500.960/-1366.303.1366.728@0.0.1500.960" timestamp="1580958609835" />
+    <state width="1457" height="338" key="GridCell.Tab.1.bottom/0.0.1500.960/-1366.303.1366.728@0.0.1500.960" timestamp="1580963670207" />
     <state width="1458" height="338" key="GridCell.Tab.1.bottom/0.0.1500.960@0.0.1500.960" timestamp="1580933565880" />
-    <state width="1458" height="338" key="GridCell.Tab.1.center" timestamp="1580958609835">
+    <state width="1457" height="338" key="GridCell.Tab.1.center" timestamp="1580963670207">
       <screen x="0" y="0" width="1500" height="960" />
     </state>
-    <state width="1458" height="338" key="GridCell.Tab.1.center/0.0.1500.960/-1366.303.1366.728@0.0.1500.960" timestamp="1580958609835" />
+    <state width="1457" height="338" key="GridCell.Tab.1.center/0.0.1500.960/-1366.303.1366.728@0.0.1500.960" timestamp="1580963670207" />
     <state width="1458" height="338" key="GridCell.Tab.1.center/0.0.1500.960@0.0.1500.960" timestamp="1580933565880" />
-    <state width="1458" height="338" key="GridCell.Tab.1.left" timestamp="1580958609835">
+    <state width="1457" height="338" key="GridCell.Tab.1.left" timestamp="1580963670207">
       <screen x="0" y="0" width="1500" height="960" />
     </state>
-    <state width="1458" height="338" key="GridCell.Tab.1.left/0.0.1500.960/-1366.303.1366.728@0.0.1500.960" timestamp="1580958609835" />
+    <state width="1457" height="338" key="GridCell.Tab.1.left/0.0.1500.960/-1366.303.1366.728@0.0.1500.960" timestamp="1580963670207" />
     <state width="1458" height="338" key="GridCell.Tab.1.left/0.0.1500.960@0.0.1500.960" timestamp="1580933565880" />
-    <state width="1458" height="338" key="GridCell.Tab.1.right" timestamp="1580958609835">
+    <state width="1457" height="338" key="GridCell.Tab.1.right" timestamp="1580963670207">
       <screen x="0" y="0" width="1500" height="960" />
     </state>
-    <state width="1458" height="338" key="GridCell.Tab.1.right/0.0.1500.960/-1366.303.1366.728@0.0.1500.960" timestamp="1580958609835" />
+    <state width="1457" height="338" key="GridCell.Tab.1.right/0.0.1500.960/-1366.303.1366.728@0.0.1500.960" timestamp="1580963670207" />
     <state width="1458" height="338" key="GridCell.Tab.1.right/0.0.1500.960@0.0.1500.960" timestamp="1580933565880" />
-    <state width="1458" height="338" key="GridCell.Tab.2.bottom" timestamp="1580958609835">
+    <state width="1457" height="338" key="GridCell.Tab.2.bottom" timestamp="1580963670207">
       <screen x="0" y="0" width="1500" height="960" />
     </state>
-    <state width="1458" height="338" key="GridCell.Tab.2.bottom/0.0.1500.960/-1366.303.1366.728@0.0.1500.960" timestamp="1580958609835" />
+    <state width="1457" height="338" key="GridCell.Tab.2.bottom/0.0.1500.960/-1366.303.1366.728@0.0.1500.960" timestamp="1580963670207" />
     <state width="1458" height="338" key="GridCell.Tab.2.bottom/0.0.1500.960@0.0.1500.960" timestamp="1580933565880" />
-    <state width="1458" height="338" key="GridCell.Tab.2.center" timestamp="1580958609835">
+    <state width="1457" height="338" key="GridCell.Tab.2.center" timestamp="1580963670207">
       <screen x="0" y="0" width="1500" height="960" />
     </state>
-    <state width="1458" height="338" key="GridCell.Tab.2.center/0.0.1500.960/-1366.303.1366.728@0.0.1500.960" timestamp="1580958609835" />
+    <state width="1457" height="338" key="GridCell.Tab.2.center/0.0.1500.960/-1366.303.1366.728@0.0.1500.960" timestamp="1580963670207" />
     <state width="1458" height="338" key="GridCell.Tab.2.center/0.0.1500.960@0.0.1500.960" timestamp="1580933565880" />
-    <state width="1458" height="338" key="GridCell.Tab.2.left" timestamp="1580958609835">
+    <state width="1457" height="338" key="GridCell.Tab.2.left" timestamp="1580963670207">
       <screen x="0" y="0" width="1500" height="960" />
     </state>
-    <state width="1458" height="338" key="GridCell.Tab.2.left/0.0.1500.960/-1366.303.1366.728@0.0.1500.960" timestamp="1580958609835" />
+    <state width="1457" height="338" key="GridCell.Tab.2.left/0.0.1500.960/-1366.303.1366.728@0.0.1500.960" timestamp="1580963670207" />
     <state width="1458" height="338" key="GridCell.Tab.2.left/0.0.1500.960@0.0.1500.960" timestamp="1580933565880" />
-    <state width="1458" height="338" key="GridCell.Tab.2.right" timestamp="1580958609835">
+    <state width="1457" height="338" key="GridCell.Tab.2.right" timestamp="1580963670207">
       <screen x="0" y="0" width="1500" height="960" />
     </state>
-    <state width="1458" height="338" key="GridCell.Tab.2.right/0.0.1500.960/-1366.303.1366.728@0.0.1500.960" timestamp="1580958609835" />
+    <state width="1457" height="338" key="GridCell.Tab.2.right/0.0.1500.960/-1366.303.1366.728@0.0.1500.960" timestamp="1580963670207" />
     <state width="1458" height="338" key="GridCell.Tab.2.right/0.0.1500.960@0.0.1500.960" timestamp="1580933565880" />
-    <state width="1458" height="338" key="GridCell.Tab.3.bottom" timestamp="1580958609835">
+    <state width="1457" height="338" key="GridCell.Tab.3.bottom" timestamp="1580963670207">
       <screen x="0" y="0" width="1500" height="960" />
     </state>
-    <state width="1458" height="338" key="GridCell.Tab.3.bottom/0.0.1500.960/-1366.303.1366.728@0.0.1500.960" timestamp="1580958609835" />
+    <state width="1457" height="338" key="GridCell.Tab.3.bottom/0.0.1500.960/-1366.303.1366.728@0.0.1500.960" timestamp="1580963670207" />
     <state width="1458" height="338" key="GridCell.Tab.3.bottom/0.0.1500.960@0.0.1500.960" timestamp="1580933565880" />
-    <state width="1458" height="338" key="GridCell.Tab.3.center" timestamp="1580958609835">
+    <state width="1457" height="338" key="GridCell.Tab.3.center" timestamp="1580963670207">
       <screen x="0" y="0" width="1500" height="960" />
     </state>
-    <state width="1458" height="338" key="GridCell.Tab.3.center/0.0.1500.960/-1366.303.1366.728@0.0.1500.960" timestamp="1580958609835" />
+    <state width="1457" height="338" key="GridCell.Tab.3.center/0.0.1500.960/-1366.303.1366.728@0.0.1500.960" timestamp="1580963670207" />
     <state width="1458" height="338" key="GridCell.Tab.3.center/0.0.1500.960@0.0.1500.960" timestamp="1580933565880" />
-    <state width="1458" height="338" key="GridCell.Tab.3.left" timestamp="1580958609835">
+    <state width="1457" height="338" key="GridCell.Tab.3.left" timestamp="1580963670207">
       <screen x="0" y="0" width="1500" height="960" />
     </state>
-    <state width="1458" height="338" key="GridCell.Tab.3.left/0.0.1500.960/-1366.303.1366.728@0.0.1500.960" timestamp="1580958609835" />
+    <state width="1457" height="338" key="GridCell.Tab.3.left/0.0.1500.960/-1366.303.1366.728@0.0.1500.960" timestamp="1580963670207" />
     <state width="1458" height="338" key="GridCell.Tab.3.left/0.0.1500.960@0.0.1500.960" timestamp="1580933565880" />
-    <state width="1458" height="338" key="GridCell.Tab.3.right" timestamp="1580958609835">
+    <state width="1457" height="338" key="GridCell.Tab.3.right" timestamp="1580963670207">
       <screen x="0" y="0" width="1500" height="960" />
     </state>
-    <state width="1458" height="338" key="GridCell.Tab.3.right/0.0.1500.960/-1366.303.1366.728@0.0.1500.960" timestamp="1580958609835" />
+    <state width="1457" height="338" key="GridCell.Tab.3.right/0.0.1500.960/-1366.303.1366.728@0.0.1500.960" timestamp="1580963670207" />
     <state width="1458" height="338" key="GridCell.Tab.3.right/0.0.1500.960@0.0.1500.960" timestamp="1580933565880" />
-    <state width="1458" height="338" key="GridCell.Tab.4.bottom" timestamp="1580958609835">
+    <state width="1457" height="338" key="GridCell.Tab.4.bottom" timestamp="1580963670208">
       <screen x="0" y="0" width="1500" height="960" />
     </state>
-    <state width="1458" height="338" key="GridCell.Tab.4.bottom/0.0.1500.960/-1366.303.1366.728@0.0.1500.960" timestamp="1580958609835" />
+    <state width="1457" height="338" key="GridCell.Tab.4.bottom/0.0.1500.960/-1366.303.1366.728@0.0.1500.960" timestamp="1580963670208" />
     <state width="1458" height="338" key="GridCell.Tab.4.bottom/0.0.1500.960@0.0.1500.960" timestamp="1580933565880" />
-    <state width="1458" height="338" key="GridCell.Tab.4.center" timestamp="1580958609835">
+    <state width="1457" height="338" key="GridCell.Tab.4.center" timestamp="1580963670208">
       <screen x="0" y="0" width="1500" height="960" />
     </state>
-    <state width="1458" height="338" key="GridCell.Tab.4.center/0.0.1500.960/-1366.303.1366.728@0.0.1500.960" timestamp="1580958609835" />
+    <state width="1457" height="338" key="GridCell.Tab.4.center/0.0.1500.960/-1366.303.1366.728@0.0.1500.960" timestamp="1580963670208" />
     <state width="1458" height="338" key="GridCell.Tab.4.center/0.0.1500.960@0.0.1500.960" timestamp="1580933565880" />
-    <state width="1458" height="338" key="GridCell.Tab.4.left" timestamp="1580958609835">
+    <state width="1457" height="338" key="GridCell.Tab.4.left" timestamp="1580963670207">
       <screen x="0" y="0" width="1500" height="960" />
     </state>
-    <state width="1458" height="338" key="GridCell.Tab.4.left/0.0.1500.960/-1366.303.1366.728@0.0.1500.960" timestamp="1580958609835" />
+    <state width="1457" height="338" key="GridCell.Tab.4.left/0.0.1500.960/-1366.303.1366.728@0.0.1500.960" timestamp="1580963670207" />
     <state width="1458" height="338" key="GridCell.Tab.4.left/0.0.1500.960@0.0.1500.960" timestamp="1580933565880" />
-    <state width="1458" height="338" key="GridCell.Tab.4.right" timestamp="1580958609835">
+    <state width="1457" height="338" key="GridCell.Tab.4.right" timestamp="1580963670208">
       <screen x="0" y="0" width="1500" height="960" />
     </state>
-    <state width="1458" height="338" key="GridCell.Tab.4.right/0.0.1500.960/-1366.303.1366.728@0.0.1500.960" timestamp="1580958609835" />
+    <state width="1457" height="338" key="GridCell.Tab.4.right/0.0.1500.960/-1366.303.1366.728@0.0.1500.960" timestamp="1580963670208" />
     <state width="1458" height="338" key="GridCell.Tab.4.right/0.0.1500.960@0.0.1500.960" timestamp="1580933565880" />
     <state x="343" y="213" key="Rider.ProjectTemplateDialog.Size" timestamp="1580955493114">
       <screen x="0" y="0" width="1500" height="960" />
     </state>
     <state x="343" y="213" key="Rider.ProjectTemplateDialog.Size/0.0.1500.960/-1366.303.1366.728@0.0.1500.960" timestamp="1580683801269" />
     <state x="343" y="213" key="Rider.ProjectTemplateDialog.Size/0.0.1500.960@0.0.1500.960" timestamp="1580955493114" />
-    <state x="458" y="161" key="RiderGenerateDialog" timestamp="1580927423695">
+    <state x="458" y="161" key="RiderGenerateDialog" timestamp="1580961997772">
       <screen x="0" y="0" width="1500" height="960" />
     </state>
-    <state x="458" y="161" key="RiderGenerateDialog/0.0.1500.960/-1366.303.1366.728@0.0.1500.960" timestamp="1580689926127" />
+    <state x="458" y="161" key="RiderGenerateDialog/0.0.1500.960/-1366.303.1366.728@0.0.1500.960" timestamp="1580961997772" />
     <state x="458" y="161" key="RiderGenerateDialog/0.0.1500.960@0.0.1500.960" timestamp="1580927423695" />
-    <state x="252" y="123" key="SettingsEditor" timestamp="1580951759942">
+    <state x="252" y="123" key="SettingsEditor" timestamp="1580958908560">
       <screen x="0" y="0" width="1500" height="960" />
     </state>
+    <state x="252" y="123" key="SettingsEditor/0.0.1500.960/-1366.303.1366.728@0.0.1500.960" timestamp="1580958908560" />
     <state x="252" y="123" key="SettingsEditor/0.0.1500.960@0.0.1500.960" timestamp="1580951759942" />
-    <state x="343" y="214" key="Vcs.Push.Dialog.v2" timestamp="1580955052844">
+    <state x="343" y="214" key="Vcs.Push.Dialog.v2" timestamp="1580958855057">
       <screen x="0" y="0" width="1500" height="960" />
     </state>
+    <state x="343" y="214" key="Vcs.Push.Dialog.v2/0.0.1500.960/-1366.303.1366.728@0.0.1500.960" timestamp="1580958855057" />
     <state x="343" y="214" key="Vcs.Push.Dialog.v2/0.0.1500.960@0.0.1500.960" timestamp="1580955052844" />
     <state width="756" height="486" key="XDebugger.FullValuePopup" timestamp="1580919776699">
       <screen x="0" y="0" width="1500" height="960" />
@@ -533,5 +460,50 @@
     </state>
     <state x="413" y="206" width="672" height="678" key="search.everywhere.popup/0.0.1500.960/-1366.303.1366.728@0.0.1500.960" timestamp="1580683129438" />
     <state x="415" y="208" width="672" height="678" key="search.everywhere.popup/0.0.1500.960@0.0.1500.960" timestamp="1580931246815" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/EmailMessageRouter.Domain/Services/EmailDeliveryServiceImpl.cs</url>
+          <line>21</line>
+          <properties documentPath="$PROJECT_DIR$/EmailMessageRouter.Domain/Services/EmailDeliveryServiceImpl.cs" initialLine="21">
+            <startOffsets>
+              <option value="813" />
+            </startOffsets>
+            <endOffsets>
+              <option value="871" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/EmailMessageRouter.Domain/Services/EmailDeliveryServiceImpl.cs</url>
+          <line>13</line>
+          <properties documentPath="$PROJECT_DIR$/EmailMessageRouter.Domain/Services/EmailDeliveryServiceImpl.cs" initialLine="13">
+            <startOffsets>
+              <option value="395" />
+            </startOffsets>
+            <endOffsets>
+              <option value="453" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/EmailMessageRouter.Processor/Actors/MessageResolverActor.cs</url>
+          <line>42</line>
+          <properties documentPath="$PROJECT_DIR$/EmailMessageRouter.Processor/Actors/MessageResolverActor.cs" initialLine="42">
+            <startOffsets>
+              <option value="1828" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2022" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -95,6 +95,7 @@
       </e>
       <e p="EmailMessageRouter.Processor" t="IncludeRecursive">
         <e p="Actors" t="Include">
+          <e p="BasePersistentActor.cs" t="Include" />
           <e p="MessageHandlerExecutorActor.cs" t="Include" />
           <e p="MessageResolverActor.cs" t="Include" />
           <e p="MessageRoutingManagerActor.cs" t="Include" />

@@ -16,12 +16,13 @@ namespace EmailMessageRouter.Processor.Actors
     /// [Note] This can be refactored to evaluate the request in batches
     /// instead of individual emails.
     /// </summary>
-    public class MessageHandlerExecutorActor : ReceivePersistentActor
+    public class MessageHandlerExecutorActor : BasePersistentActor
     {
         public override string PersistenceId => "EmailMessageRouter.Processor.Actors.MessageHandlerExecutionActor";
         private readonly IEmailHandler _firstHandlers;
         private readonly Mapper _mapper;
         public MessageHandlerExecutorActor(Mapper mapper, IDictionary<string, bool> handlersSettings)
+            : base("MessageHandlerExecutorActor")
         {
             _mapper = mapper;
             _firstHandlers = ConfigureHandlerChain(handlersSettings);

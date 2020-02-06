@@ -1,4 +1,6 @@
-﻿namespace EmailMessageRouter.Data.Cache
+﻿using System;
+
+namespace EmailMessageRouter.Data.Cache
 {
     public class InMemoryCache<K, E> : ICache<K, E>
     {
@@ -17,7 +19,7 @@
         public E Find(K key)
         {
             // implementation goes here
-            throw new System.NotImplementedException();
+            return Activator.CreateInstance<E>();
         }
     }
 }

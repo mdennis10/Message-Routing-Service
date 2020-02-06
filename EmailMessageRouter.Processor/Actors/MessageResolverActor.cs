@@ -15,7 +15,7 @@ namespace EmailMessageRouter.Processor.Actors
     /// as no knowledge of the client providing emails and therefore cannot
     /// guarantee all messages contained within payload are transactional or not. 
     /// </summary>
-    public class MessageResolverActor : ReceivePersistentActor
+    public class MessageResolverActor : BasePersistentActor
     {
         private readonly ILoggingAdapter _log = Context.GetLogger();
         public override string PersistenceId => "EmailMessageRouter.Processor.Actors.MessageResolverActor";
@@ -23,10 +23,11 @@ namespace EmailMessageRouter.Processor.Actors
         private readonly Mapper _mapper;
         
         public MessageResolverActor(IMessageRoutingService messageRoutingService, Mapper mapper)
+        : base("MessageResolverActor")
         {
             _messageRoutingService = messageRoutingService;
             _mapper = mapper;
-            Command<ResolveEmailTypeMsg>(HandleCategorizeEmailMsg);
+            Command<ResolveEmailTypeMsg>(HandleResolveEmailTypeMsg);
         }
 
         public static Props Props(IMessageRoutingService messageRoutingService, Mapper mapper)
@@ -34,11 +35,11 @@ namespace EmailMessageRouter.Processor.Actors
             return Akka.Actor.Props.Create(() => new MessageResolverActor(messageRoutingService, mapper));
         }
         
-        private void HandleCategorizeEmailMsg(ResolveEmailTypeMsg msg)
+        private void HandleResolveEmailTypeMsg(ResolveEmailTypeMsg msg)
         {
             Persist(msg, x =>
             {
-                var messageType = _messageRoutingService.ResolveEmailMessageType(_mapper.Map<EmailMessage>(msg));
+                var messageType = _messageRoutingService.ResolveEmailMessageType(_mapper.Map<EmailMessage>(msg.Email));
                 var emailResolvedMsg = new EmailResolvedMsg(
                     requestId: msg.RequestId, 
                     email: msg.Email, 

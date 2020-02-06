@@ -14,12 +14,11 @@ namespace EmailMessageRouter.Processor.Actors
     /// The MessageRoutingManagerActor is a parent actor
     /// that orchestrate work to all child actors. 
     /// </summary>
-    public class MessageRoutingManagerActor : ReceivePersistentActor
+    public class MessageRoutingManagerActor : BasePersistentActor
     {
         public override string PersistenceId => "EmailMessageRouter.Processor.Actors.MessageRoutingManagerActor";
         private readonly IEmailDeliveryService _emailDeliveryService;
         private readonly IMessageRoutingService _messageRoutingService;
-        private readonly ILoggingAdapter _log = Context.GetLogger();
         private readonly Mapper _mapper;
         private readonly IActorRef _messageResolverActor;
         private readonly IActorRef _messageValidationActor;
@@ -34,6 +33,7 @@ namespace EmailMessageRouter.Processor.Actors
             int maxBatchSize,
             IDictionary<string, bool> validationRulesSettings,
             IDictionary<string, bool> handlersSettings)
+        : base("MessageRoutingManagerActor")
         {
             _messageRoutingService = messageRoutingService;
             _emailDeliveryService = emailDeliveryService;
@@ -43,19 +43,19 @@ namespace EmailMessageRouter.Processor.Actors
             _mapper = mapper;
             
             // create child actors
-            _messageResolverActor = Context.System.ActorOf(
+            _messageResolverActor = Context.ActorOf(
                 MessageResolverActor.Props(messageRoutingService, mapper), 
                 typeof(MessageResolverActor).Name
             );
-            _messageValidationActor = Context.System.ActorOf(
+            _messageValidationActor = Context.ActorOf(
                 MessageValidationActor.Props(messageRoutingService, accountRepository, mapper, validationRulesSettings),
                 typeof(MessageValidationActor).Name
             );
-            _messageSendingActor = Context.System.ActorOf(
+            _messageSendingActor = Context.ActorOf(
                 MessageSendingActor.Props(emailDeliveryService, mapper, maxBatchSize),
                 typeof(MessageSendingActor).Name
             );
-            _messageHandlerExecutorActor = Context.System.ActorOf(
+            _messageHandlerExecutorActor = Context.ActorOf(
                 MessageHandlerExecutorActor.Props(handlersSettings, mapper),
                 typeof(MessageHandlerExecutorActor).Name
             );

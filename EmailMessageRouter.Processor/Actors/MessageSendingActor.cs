@@ -9,13 +9,14 @@ using EmailMessageRouter.Processor.Model;
 
 namespace EmailMessageRouter.Processor.Actors
 {
-    public class MessageSendingActor : ReceivePersistentActor
+    public class MessageSendingActor : BasePersistentActor
     {
         public override string PersistenceId => "EmailMessageRouter.Processor.Actors.MessageSendingActor";
         private readonly IEmailDeliveryService _emailDeliveryService;
         private readonly Mapper _mapper;
         private readonly BulkEmailQueue _bulkEmailQueue;
         public MessageSendingActor(IEmailDeliveryService emailDeliveryService, Mapper mapper, int maxBatchSize)
+        : base("MessageSendingActor")
         {
             _bulkEmailQueue = new BulkEmailQueue(Self, maxBatchSize);
             _emailDeliveryService = emailDeliveryService;

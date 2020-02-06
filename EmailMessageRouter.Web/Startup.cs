@@ -36,6 +36,7 @@ namespace EmailMessageRouter.Web
             { 
                 cfg.CreateMap<PostmarkEmail, Email>();
                 cfg.CreateMap<EmailMessage, Email>();
+                cfg.CreateMap<Email, EmailMessage>();
             });
             var mapper = new Mapper(mapperConfig);
             services.AddSingleton(x => mapper);
