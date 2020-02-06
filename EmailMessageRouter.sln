@@ -8,6 +8,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailMessageRouter.Data", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailMessageRouter.Domain", "EmailMessageRouter.Domain\EmailMessageRouter.Domain.csproj", "{72872D29-097A-49D9-923B-299580F36C33}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailMessageRouter.Domain.Test", "EmailMessageRouter.Domain.Test\EmailMessageRouter.Domain.Test.csproj", "{65E61EEB-B473-4CFB-AB3F-D93FBAD6D090}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +32,9 @@ Global
 		{72872D29-097A-49D9-923B-299580F36C33}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{72872D29-097A-49D9-923B-299580F36C33}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{72872D29-097A-49D9-923B-299580F36C33}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65E61EEB-B473-4CFB-AB3F-D93FBAD6D090}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65E61EEB-B473-4CFB-AB3F-D93FBAD6D090}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65E61EEB-B473-4CFB-AB3F-D93FBAD6D090}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65E61EEB-B473-4CFB-AB3F-D93FBAD6D090}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

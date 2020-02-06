@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
+    <e p="C:\Users\mario\.nuget\packages\microsoft.net.test.sdk\16.4.0\build\netcoreapp2.1" t="Include">
+      <e p="Microsoft.NET.Test.Sdk.Program.cs" t="Include" />
+    </e>
+    <e p="C:\Users\mario\.nuget\packages\microsoft.testplatform.testhost\16.4.0\build\netcoreapp2.1\x64\testhost.dll" t="Include" />
+    <e p="C:\Users\mario\.nuget\packages\microsoft.testplatform.testhost\16.4.0\build\netcoreapp2.1\x64\testhost.exe" t="Include" />
+    <e p="C:\Users\mario\.nuget\packages\nunit3testadapter\3.15.1\build\netcoreapp2.0\nunit.engine.api.dll" t="Include" />
+    <e p="C:\Users\mario\.nuget\packages\nunit3testadapter\3.15.1\build\netcoreapp2.0\nunit.engine.dll" t="Include" />
+    <e p="C:\Users\mario\.nuget\packages\nunit3testadapter\3.15.1\build\netcoreapp2.0\NUnit3.TestAdapter.dll" t="Include" />
+    <e p="C:\Users\mario\.nuget\packages\nunit3testadapter\3.15.1\build\netcoreapp2.0\NUnit3.TestAdapter.pdb" t="Include" />
     <e p="C:\Users\mario\.Rider2019.3\system\extResources" t="IncludeRecursive" />
     <e p="C:\Users\mario\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_EmailMessageRouter.110245181.00" t="ExcludeRecursive" />
     <e p="C:\Users\mario\RiderProjects\EmailMessageRouter" t="IncludeFlat">
@@ -57,7 +66,7 @@
           <e p="EmailDeliveryServiceImpl.cs" t="Include" />
           <e p="IEmailDeliveryService.cs" t="Include" />
           <e p="IMessageRoutingService.cs" t="Include" />
-          <e p="MessageRoutingService.cs" t="Include" />
+          <e p="MessageRoutingServiceImpl.cs" t="Include" />
         </e>
         <e p="Validation" t="Include">
           <e p="EmailValidator.cs" t="Include" />
@@ -65,6 +74,23 @@
           <e p="IValidationRule.cs" t="Include" />
           <e p="RecipientSubscribeRule.cs" t="Include" />
           <e p="SourceEmailValidationRule.cs" t="Include" />
+        </e>
+      </e>
+      <e p="EmailMessageRouter.Domain.Test" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="EmailMessageRouter.Domain.Test.csproj" t="IncludeRecursive" />
+        <e p="Handlers" t="Include">
+          <e p="MessageReputationScoreHandlerTest.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="EmailMessageRouter.Domain.Test.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Services" t="Include">
+          <e p="MessageRoutingServiceTest.cs" t="Include" />
         </e>
       </e>
       <e p="EmailMessageRouter.Processor" t="IncludeRecursive">
