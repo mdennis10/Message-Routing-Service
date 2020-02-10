@@ -66,8 +66,8 @@ instruct child actors to restart.
 
 **Command method**
 
-The actor Command is used to tell which actor method
-should process a give messsage type
+The actor Command is used to configure which actor method
+should handle a given messsage.
 
 **Persist method**
 
