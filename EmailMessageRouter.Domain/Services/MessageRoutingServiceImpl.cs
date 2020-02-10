@@ -34,7 +34,7 @@ namespace EmailMessageRouter.Domain.Services
             var account = _cache.Find(message.From);
             if ( account != null)
             {
-                return resolveMessageType(account.SupportedMessageType);
+                return ResolveMessageType(account.SupportedMessageType);
             }
             account = _accountRepository.FindByEmail(message.From);
             if (account == null)
@@ -44,13 +44,13 @@ namespace EmailMessageRouter.Domain.Services
             // can be used to reduce the overhead on the
             // database read operations.
             _cache.Store(message.From, account);
-            return resolveMessageType(account.SupportedMessageType);
+            return ResolveMessageType(account.SupportedMessageType);
         }
         
-        private MessageType resolveMessgeType(int type) {
+        private MessageType ResolveMessageType(int type) {
             switch(type){
                 case 1:  return MessageType.Transactional;
-                case 2:  return MessageType.NonTransactional:
+                case 2: return MessageType.NonTransactional;
                 default: return MessageType.Unknown;
             }
         }
