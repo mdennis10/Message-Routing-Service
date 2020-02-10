@@ -60,7 +60,7 @@ Prop to actor system which creates and manages the lifecycle of actor processes.
 **Parent & Child Actors**
 
 All actors created by a actor are children of that actor. The parent actor
-supervises the children actor and tell them what do when they encounter failures.
+supervises the children actors and tell them what do when they encounter failures.
 For the purpose of this assessment the default behavior will be used which is to
 instruct child actors to restart.
 
