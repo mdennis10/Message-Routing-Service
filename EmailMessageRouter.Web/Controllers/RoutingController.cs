@@ -13,7 +13,7 @@ namespace EmailMessageRouter.Web.Controllers
 {
     /// <summary>
     /// Routing Service endpoint will be versioned to
-    /// maintain graceful service evolution needs changes.
+    /// maintain graceful service evolution.
     /// </summary>
     [ApiController]
     [Route("api/v1/[controller]")]
