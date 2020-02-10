@@ -42,7 +42,7 @@ namespace EmailMessageRouter.Domain.Services
             if (account == null)
                 return MessageType.Unknown;
             
-            // Assuming that From emails don't change a cache
+            // Assuming the From emails don't change a cache
             // can be used to reduce the overhead on the
             // database read operations.
             _cache.Store(message.From, account);
