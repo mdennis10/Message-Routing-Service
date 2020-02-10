@@ -19,7 +19,7 @@ namespace EmailMessageRouter.Data.Cache
         public E Find(K key)
         {
             // implementation goes here
-            return Activator.CreateInstance<E>();
+            return Activator.CreateInstance<E>(); 
         }
     }
 }

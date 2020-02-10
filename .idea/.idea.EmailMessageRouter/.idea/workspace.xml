@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="513a42b6-4947-4226-a385-daa39a8c8081" name="Default Changelist" comment="add a few test">
+    <list default="true" id="513a42b6-4947-4226-a385-daa39a8c8081" name="Default Changelist" comment="refactor MessageRoutingServiceImpl.cs">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.EmailMessageRouter/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.EmailMessageRouter/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EmailMessageRouter.Domain.Test/bin/Debug/netcoreapp3.1/nunit_random_seed.tmp" beforeDir="false" afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain.Test/bin/Debug/netcoreapp3.1/nunit_random_seed.tmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EmailMessageRouter.Domain.Test/obj/Debug/netcoreapp3.1/EmailMessageRouter.Domain.Test.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain.Test/obj/Debug/netcoreapp3.1/EmailMessageRouter.Domain.Test.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EmailMessageRouter.Domain/Services/MessageRoutingServiceImpl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain/Services/MessageRoutingServiceImpl.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EmailMessageRouter.Domain/obj/Debug/netcoreapp3.1/EmailMessageRouter.Domain.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain/obj/Debug/netcoreapp3.1/EmailMessageRouter.Domain.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EmailMessageRouter.Processor/obj/Debug/netcoreapp3.1/EmailMessageRouter.Processor.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/EmailMessageRouter.Processor/obj/Debug/netcoreapp3.1/EmailMessageRouter.Processor.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EmailMessageRouter.Web/obj/Debug/netcoreapp3.1/EmailMessageRouter.Web.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/EmailMessageRouter.Web/obj/Debug/netcoreapp3.1/EmailMessageRouter.Web.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EmailMessageRouter.Data/Cache/ICache.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EmailMessageRouter.Data/Cache/ICache.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EmailMessageRouter.Domain/Services/EmailDeliveryServiceImpl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EmailMessageRouter.Domain/Services/EmailDeliveryServiceImpl.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +82,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/EmailMessageRouter.Processor/Messages/EmailQualifyMsg.cs" />
         <option value="$PROJECT_DIR$/EmailMessageRouter.Domain/Services/RestEmailDeliveryServiceImpl.cs" />
         <option value="$PROJECT_DIR$/EmailMessageRouter.Domain/Model/EmailMessage.cs" />
         <option value="$PROJECT_DIR$/EmailMessageRouter.Domain/Model/MessageType.cs" />
@@ -133,10 +128,11 @@
         <option value="$PROJECT_DIR$/EmailMessageRouter.Processor/Actors/BasePersistentActor.cs" />
         <option value="$PROJECT_DIR$/EmailMessageRouter.Processor/Actors/MessageResolverActor.cs" />
         <option value="$PROJECT_DIR$/EmailMessageRouter.Processor/Actors/MessageRoutingManagerActor.cs" />
-        <option value="$PROJECT_DIR$/EmailMessageRouter.Domain/Services/EmailDeliveryServiceImpl.cs" />
         <option value="$PROJECT_DIR$/EmailMessageRouter.Data/Repositories/AccountRepositoryImpl.cs" />
         <option value="$PROJECT_DIR$/EmailMessageRouter.Web/appsettings.json" />
         <option value="$PROJECT_DIR$/EmailMessageRouter.Domain/Services/MessageRoutingServiceImpl.cs" />
+        <option value="$PROJECT_DIR$/EmailMessageRouter.Domain/Services/EmailDeliveryServiceImpl.cs" />
+        <option value="$PROJECT_DIR$/EmailMessageRouter.Data/Cache/ICache.cs" />
       </list>
     </option>
   </component>
@@ -223,7 +219,7 @@
       <updated>1580681354017</updated>
       <workItem from="1580681357735" duration="8292000" />
       <workItem from="1580689709889" duration="70519000" />
-      <workItem from="1581342758249" duration="101000" />
+      <workItem from="1581342758249" duration="313000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1580951973083</created>
@@ -274,7 +270,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580963813249</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="refactor MessageRoutingServiceImpl.cs">
+      <created>1581342915216</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1581342915216</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -300,7 +303,8 @@
     <MESSAGE value="remove async/await" />
     <MESSAGE value="add a few test" />
     <MESSAGE value="refactoring actor creation and data mocking" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactoring actor creation and data mocking" />
+    <MESSAGE value="refactor MessageRoutingServiceImpl.cs" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor MessageRoutingServiceImpl.cs" />
   </component>
   <component name="WindowStateProjectService">
     <state x="266" y="151" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1580959300367">
@@ -423,11 +427,11 @@
     </state>
     <state x="252" y="123" key="SettingsEditor/0.0.1500.960/-1366.303.1366.728@0.0.1500.960" timestamp="1580958908560" />
     <state x="252" y="123" key="SettingsEditor/0.0.1500.960@0.0.1500.960" timestamp="1580951759942" />
-    <state x="343" y="214" key="Vcs.Push.Dialog.v2" timestamp="1580963821701">
+    <state x="343" y="214" key="Vcs.Push.Dialog.v2" timestamp="1581342931629">
       <screen x="0" y="0" width="1500" height="960" />
     </state>
     <state x="343" y="214" key="Vcs.Push.Dialog.v2/0.0.1500.960/-1366.303.1366.728@0.0.1500.960" timestamp="1580963821701" />
-    <state x="343" y="214" key="Vcs.Push.Dialog.v2/0.0.1500.960@0.0.1500.960" timestamp="1580955052844" />
+    <state x="343" y="214" key="Vcs.Push.Dialog.v2/0.0.1500.960@0.0.1500.960" timestamp="1581342931629" />
     <state width="756" height="486" key="XDebugger.FullValuePopup" timestamp="1580919776699">
       <screen x="0" y="0" width="1500" height="960" />
     </state>

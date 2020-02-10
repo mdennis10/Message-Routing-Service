@@ -16,15 +16,15 @@ namespace EmailMessageRouter.Domain.Services
 
         public void SendingBatchEmail(List<EmailMessage> emailMessage)
         {
-            // This will send email batch to a bulk email downstream REST API.
-            // The downstream API could also some Message Queue, however a REST API would 
+            // This will send email batch to the bulk email downstream REST API.
+            // The downstream API could also be Message Queue, however a REST API would 
             // provide a standard interface for communication and interoperability. 
             Console.WriteLine(JsonSerializer.Serialize(emailMessage));
         }
 
         public void ProcessDisqualifiedEmail(Guid requestId, EmailMessage email, MessageType messageType)
         {
-            // This will store disqualified email
+            // This will store disqualified emails
         }
     }
 }
