@@ -87,6 +87,18 @@ Application configuration can be found in the **appsettings.json** EmailMessageR
   }
 ```
 
+**Api** - contains all external endpoint used by application. These are required configuration and the application will throw a ConfigurationException if they are missing.
+```
+"Api": {
+    "DownStreamSingleEmail": "https://postmarkapp/api/email",
+    "DownStreamBulkEmail": "https://postmarkapp/api/email/bulk"
+  }
+```
+**Consul** - configs url of consul agent. Application will not register instance with consul agent if configuration is missing.
+
+```
+"Consul": "https://onpremise-consul/agent"
+```  
 ## Akka.NET Info
 Actor class are not instantiated directly but instead by passing a 
 Prop to actor system which creates and manages the lifecycle of actor processes.
