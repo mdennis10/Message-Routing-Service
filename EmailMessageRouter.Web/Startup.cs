@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using Akka.Actor;
+using Akka.Configuration;
 using Akka.Util.Internal;
 using AutoMapper;
 using EmailMessageRouter.Data.Cache;
@@ -45,18 +46,10 @@ namespace EmailMessageRouter.Web
             // CI build tool will override this file for each environment.
             var maxBatchSize = Configuration.GetValue<int>("MaxBatchEmails");
             var cacheLifetime = Configuration.GetValue<int>("CacheLifetime");
-            var validationRulesSettings = new Dictionary<string, bool>();
-            Configuration
-                .GetSection("ValidationRules")
-                .GetChildren()
-                .ForEach(x => validationRulesSettings.Add(x.Key, bool.Parse(x.Value)));
 
-            var handlersSettings = new Dictionary<string, bool>();
-            Configuration
-                .GetSection("BusinessEvaluationHandlers")
-                .GetChildren()
-                .ForEach(x => handlersSettings.Add(x.Key, bool.Parse( x.Value)));
-
+            var validationRulesSettings = GetValidationRuleSettings();
+            var handlersSettings = GetHandlerSettings();
+            var apiSettings = GetApiSettings();
             
             // All dependencies required by actor system are
             // instantiate and inserted here for the purposes of
@@ -75,7 +68,7 @@ namespace EmailMessageRouter.Web
                             new MessageRequestRepositoryImpl(), 
                             new InMemoryCache<string, Account>(cacheLifetime)
                         ), 
-                        new EmailDeliveryServiceImpl(),
+                        new EmailDeliveryServiceImpl(apiSettings),
                         accountRepository, mapper, 
                         maxBatchSize, validationRulesSettings, handlersSettings
                     ),
@@ -83,6 +76,42 @@ namespace EmailMessageRouter.Web
                 )
             );
             services.AddControllers();
+        }
+
+        private Dictionary<string, string> GetApiSettings()
+        {
+            var apiSettings = new Dictionary<string, string>();
+            Configuration
+                .GetSection("Api")
+                .GetChildren()
+                .ForEach(x => apiSettings.Add(x.Key, x.Value));
+            return apiSettings;
+        }
+
+        private Dictionary<string, bool> GetValidationRuleSettings()
+        {
+            var validationRulesSettings = new Dictionary<string, bool>();
+            Configuration
+                .GetSection("ValidationRules")
+                .GetChildren()
+                .ForEach(x => validationRulesSettings.Add(x.Key, bool.Parse(x.Value)));
+            if (validationRulesSettings.ContainsKey("DownStreamSingleEmail"))
+                throw new ConfigurationException("DownStreamSingleEmail configuration required");
+            
+
+            if (validationRulesSettings.ContainsKey("DownStreamBulkEmail"))
+                throw new ConfigurationException("DownStreamBulkEmail configuration required");
+                return validationRulesSettings;
+        }
+        
+        private Dictionary<string, bool> GetHandlerSettings()
+        {
+            var handlersSettings = new Dictionary<string, bool>();
+            Configuration
+                .GetSection("BusinessEvaluationHandlers")
+                .GetChildren()
+                .ForEach(x => handlersSettings.Add(x.Key, bool.Parse( x.Value)));
+            return handlersSettings;
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -7,6 +7,12 @@ namespace EmailMessageRouter.Domain.Services
 {
     public class EmailDeliveryServiceImpl : IEmailDeliveryService
     {
+        private readonly Dictionary<string, string> _downStreamApiUrls;
+        
+        public EmailDeliveryServiceImpl(Dictionary<string, string> downStreamApiUrls)
+        {
+            _downStreamApiUrls = downStreamApiUrls;
+        }
         
         public void SendSingleEmail(EmailMessage emailMessage)
         {
