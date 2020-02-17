@@ -53,6 +53,40 @@ POST api/v1/routing
 
 submit a POST request to endpoint then check application console log to test application behavior.
 
+## Application Config
+
+Application configuration can be found in the **appsettings.json** EmailMessageRouter.Web folder.
+
+**MaxBatchEmails** - sets queue size for emails that are sent to bulk email downstream pipeline.
+
+```
+ "MaxBatchEmails": 50,
+ ```
+
+**CacheLifetime** - set the lifespan a item is stored in cache, which is represented in minutes.
+
+```
+"CacheLifetime":  10,
+```
+
+**ValidationRules** - configure all validation rules that should be executed by Message Processor. Only validation rules that are defined and set to true will be executed.
+
+```
+"ValidationRules": {
+    "EmailMessageRouter.Domain.Validation.RecipientSubscribeRule": true,
+    "EmailMessageRouter.Domain.Validation.SourceEmailValidationRule": true
+  }
+```
+
+**BusinessEvaluationHandlers** - configure all handlers that should be executed by Message Processor. Only handlers that are defined and set to true will be executed.
+
+```
+"BusinessEvaluationHandlers":{
+    "EmailMessageRouter.Domain.Handlers.MessageReputationScoreHandler":true,
+    "EmailMessageRouter.Domain.Handlers.SenderReputationScoreHandler": true
+  }
+```
+
 ## Akka.NET Info
 Actor class are not instantiated directly but instead by passing a 
 Prop to actor system which creates and manages the lifecycle of actor processes.
