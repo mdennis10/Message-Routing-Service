@@ -1,30 +1,28 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mario\\RiderProjects\\EmailMessageRouter\\EmailMessageRouter.Data\\EmailMessageRouter.Data.csproj": {}
+    "/Users/Mario/RiderProjects/Message-Routing-Service/EmailMessageRouter.Data/EmailMessageRouter.Data.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mario\\RiderProjects\\EmailMessageRouter\\EmailMessageRouter.Data\\EmailMessageRouter.Data.csproj": {
+    "/Users/Mario/RiderProjects/Message-Routing-Service/EmailMessageRouter.Data/EmailMessageRouter.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mario\\RiderProjects\\EmailMessageRouter\\EmailMessageRouter.Data\\EmailMessageRouter.Data.csproj",
+        "projectUniqueName": "/Users/Mario/RiderProjects/Message-Routing-Service/EmailMessageRouter.Data/EmailMessageRouter.Data.csproj",
         "projectName": "EmailMessageRouter.Data",
-        "projectPath": "C:\\Users\\mario\\RiderProjects\\EmailMessageRouter\\EmailMessageRouter.Data\\EmailMessageRouter.Data.csproj",
-        "packagesPath": "C:\\Users\\mario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mario\\RiderProjects\\EmailMessageRouter\\EmailMessageRouter.Data\\obj\\",
+        "projectPath": "/Users/Mario/RiderProjects/Message-Routing-Service/EmailMessageRouter.Data/EmailMessageRouter.Data.csproj",
+        "packagesPath": "/Users/Mario/.nuget/packages/",
+        "outputPath": "/Users/Mario/RiderProjects/Message-Routing-Service/EmailMessageRouter.Data/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\mario\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/Mario/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -55,7 +53,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.101/RuntimeIdentifierGraph.json"
         }
       }
     }
