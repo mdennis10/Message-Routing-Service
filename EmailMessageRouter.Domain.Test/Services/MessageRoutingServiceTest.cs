@@ -11,7 +11,7 @@ namespace EmailMessageRouter.Domain.Test.Services
     public class MessageRoutingServiceTest
     {
         [Test]
-        public void ResolveEmailMessageType_NullOrEmptyEmailFromPropertySupplied()
+        public void ResolveEmailMessageType_NullOrEmptyEmailFromPropertySuppliedTest()
         {
             var accountRepo = new Mock<IAccountRepository>();
             var messageRequestRepo = new Mock<IMessageRequestRepository>();
@@ -47,7 +47,7 @@ namespace EmailMessageRouter.Domain.Test.Services
         }
 
         [Test]
-        public void ResolveEmailMessageType()
+        public void ResolveEmailMessageTypeTest()
         {
             var accountRepo = new Mock<IAccountRepository>();
             var messageRequestRepo = new Mock<IMessageRequestRepository>();

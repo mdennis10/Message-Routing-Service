@@ -53,6 +53,52 @@ POST api/v1/routing
 
 submit a POST request to endpoint then check application console log to test application behavior.
 
+## Application Config
+
+Application configuration can be found in the **appsettings.json** EmailMessageRouter.Web folder.
+
+**MaxBatchEmails** - sets queue size for emails that are sent to bulk email downstream pipeline.
+
+```
+ "MaxBatchEmails": 50,
+ ```
+
+**CacheLifetime** - set the lifespan a item is stored in cache, which is represented in minutes.
+
+```
+"CacheLifetime":  10,
+```
+
+**ValidationRules** - configure all validation rules that should be executed by Message Processor. Only validation rules that are defined and set to true will be executed.
+
+```
+"ValidationRules": {
+    "EmailMessageRouter.Domain.Validation.RecipientSubscribeRule": true,
+    "EmailMessageRouter.Domain.Validation.SourceEmailValidationRule": true
+  }
+```
+
+**BusinessEvaluationHandlers** - configure all handlers that should be executed by Message Processor. Only handlers that are defined and set to true will be executed.
+
+```
+"BusinessEvaluationHandlers":{
+    "EmailMessageRouter.Domain.Handlers.MessageReputationScoreHandler":true,
+    "EmailMessageRouter.Domain.Handlers.SenderReputationScoreHandler": true
+  }
+```
+
+**Api** - contains all external endpoint used by application. These are required configuration and the application will throw a ConfigurationException if they are missing.
+```
+"Api": {
+    "DownStreamSingleEmail": "https://postmarkapp/api/email",
+    "DownStreamBulkEmail": "https://postmarkapp/api/email/bulk"
+  }
+```
+**Consul** - configs url of consul agent. Application will not register instance with consul agent if configuration is missing.
+
+```
+"Consul": "https://onpremise-consul/agent"
+```  
 ## Akka.NET Info
 Actor class are not instantiated directly but instead by passing a 
 Prop to actor system which creates and manages the lifecycle of actor processes.
@@ -60,14 +106,14 @@ Prop to actor system which creates and manages the lifecycle of actor processes.
 **Parent & Child Actors**
 
 All actors created by a actor are children of that actor. The parent actor
-supervises the children actor and tell them what do when they encounter failures.
+supervises the children actors and tell them what do when they encounter failures.
 For the purpose of this assessment the default behavior will be used which is to
 instruct child actors to restart.
 
 **Command method**
 
-The actor Command is used to tell which actor method
-should process a give messsage type
+The actor Command is used to configure which actor method
+should handle a given messsage.
 
 **Persist method**
 
